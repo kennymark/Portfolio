@@ -6,13 +6,14 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { animations } from 'react-animation'
 
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
+  const year = new Date().getFullYear() || '2020'
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,27 +27,23 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <div className="container mx-auto mt-6">
+        <main style={{ animation: animations.fadeIn }}>
+          {children}</main>
+
       </div>
+      <footer className=' border-t w-full  mt-3 h-20 flex justify-center absolute'>
+        <div className="self-center">
+          Built with <span role='img' aria-label="love">❤️ </span> by Kenny Mark  ©{year}
+        </div>
+        {/* <a href="https://www.gatsbyjs.org" target="">Gatsby</a> */}
+      </footer>
     </>
   )
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  // children: PropTypes.node.isRequired,
 }
 
 export default Layout

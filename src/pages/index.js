@@ -1,21 +1,34 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    {/* border-4 border-black  */}
+    <div className="flex justify-between p-3">
+      <div className=" flex-1">
+        <h1 className='text-6xl leading-none text-gray-800'>
+          Hi there... <br /> I build on the web</h1>
+        <p className='text-lg text-gray-600'> Front-end & Back-end developer</p>
+        <p className='text-lg text-gray-600'> Chester, England</p>
+
+        <button className="btn shadow-sm mt-5 bg-yellow-400 p-4 text-black focus:outline-none hover:shadow-xl">Contact Me</button>
+
+      </div>
+
+      <div id="portfolio" className=' flex flex-1 justify-center mt-5 bg-yellow-400 rounded-lg  w-full shadow-xl' style={{ minHeight: 550 }}>
+        <div className='self-center mt-5 bg-white rounded-lg shadow-2xl ' style={{ minHeight: 400, width: '70%', marginTop: 80 }}>
+          <button className='flex-1 self-end mt-5 bg-yellow-500 w-25 m-5 p-3 focus:outline-none hover:shadow-xl'>
+            Portfolio
+          </button>
+        </div>
+      </div>
+
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+
+
+  </Layout >
 )
 
 export default IndexPage

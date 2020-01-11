@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Full Stack Web Developer`,
+    description: `Kenny Mark's Personal Website. I am software engineer based in Cheshire. I primarily work with the web, backend and front-end but I love me some mobile react native. Currently employed at Trelleborg Marine System`,
+    author: `@mrkennymark`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -29,6 +29,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
