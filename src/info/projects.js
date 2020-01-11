@@ -6,7 +6,7 @@ export const topProjects = [
     description: 'a simple airbnb without the backend logic',
     image: '',
     link: 'https://react-airbnb.netlify.com/',
-    color:'linear-gradient(15deg, #13547a 0%, #80d0c7 100%)'
+    color:'linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)'
   },
   {
     name: 'good notes',

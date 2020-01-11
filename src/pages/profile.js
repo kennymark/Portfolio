@@ -6,7 +6,7 @@ export default function Profiles() {
   return (
     <Layout>
       <SEO title="Profile" />
-      <div className="flex justify-between">
+      <div className="flex-row  lg:flex p-3 justify-between">
         <div className=" flex-1">
           <h1 className='text-4xl'>About Me</h1>
           <p className='text-xl text-gray-600 leading-snug'>
