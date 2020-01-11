@@ -6,11 +6,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     {/* border-4 border-black  */}
-    <div className="flex justify-between p-3">
-      <div className=" flex-1">
+    <div className="flex-row lg:flex  p-3">
+      <div className=" flex-1" data-sal='slide-right' data-sal-duration='800'>
         <h1 className='text-6xl leading-none text-gray-800'>
           Hi there... <br /> I build on the web</h1>
-        <p className='text-lg text-gray-600'> Front-end & Back-end developer</p>
+        <p className='text-lg text-gray-600'> JavaScript front-end & back-end developer</p>
         <p className='text-lg text-gray-600'> Chester, England</p>
 
         <button className="btn shadow-sm mt-5 bg-yellow-400 p-4 text-black focus:outline-none hover:shadow-xl">Contact Me</button>

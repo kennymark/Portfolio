@@ -5,23 +5,26 @@ export const topProjects = [
     status: 'live',
     description: 'a simple airbnb without the backend logic',
     image: '',
-    link: 'https://react-airbnb.netlify.com/'
+    link: 'https://react-airbnb.netlify.com/',
+    color:'linear-gradient(15deg, #13547a 0%, #80d0c7 100%)'
   },
   {
-    name: 'goodnotes',
+    name: 'good notes',
     status: 'live',
     description: 'a simple note taking application built with react and firebase',
     image: 'https://raw.githubusercontent.com/kennymark/Good-Notes/master/screenshots/main-page.png',
     link: 'https://goodnotes.netlify.com/',
-    github: 'https://github.com/kennymark/Good-Notes'
+    github: 'https://github.com/kennymark/Good-Notes',
+    color:'linear-gradient(to left, #ff5f6d, #ffc371)'
   },
   {
-    name: 'petitionsdashboard',
+    name: 'petitions dashboard',
     status: 'live',
     description: 'A SPA that extracts valuable insight into uk parliamentary petition data with just a simple url.',
     image: 'https://raw.githubusercontent.com/kennymark/petitions-dashboard/master/petitions.png',
     link: 'https://petitionsdashboard.netlify.com/',
-    github: 'https://github.com/kennymark/petitions-dashboard'
+    github: 'https://github.com/kennymark/petitions-dashboard',
+    color:'linear-gradient(to right, #136a8a, #267871)'
   },
   {
     name: 'user management app',
@@ -29,7 +32,8 @@ export const topProjects = [
     description: 'comes built with in email, twitter,facebook, github authentication, password recovery,',
     image: 'https://raw.githubusercontent.com/kennymark/express-starter/master/screenshots/account.png',
     link: 'https://express-kenny.herokuapp.com/',
-    github: 'https://github.com/kennymark/express-starter'
+    github: 'https://github.com/kennymark/express-starter',
+    color:'linear-gradient(to right, #b24592, #f15f79)'
   },
   {
     name: 'angular hub',
@@ -37,7 +41,8 @@ export const topProjects = [
     description: 'a database for angular libraries and component that google failed to build',
     image: null,
     link: 'https://angularhub.netlify.com/',
-    github: null
+    github: null,
+    color:'linear-gradient(to right, #fd746c, #ff9068)'
   },
   {
     name: 'flux weather',
@@ -45,7 +50,8 @@ export const topProjects = [
     description: 'a beautiful weather app built in react-native expo',
     image: 'https://camo.githubusercontent.com/2545a369f71065156e739ffbdc3b7cf9238361d1/68747470733a2f2f7374617469632e6e6f74696f6e2d7374617469632e636f6d2f61643364303635642d373135392d346138302d386130362d6134353531666361663938642f53696d756c61746f725f53637265656e5f53686f745f2d5f6950686f6e655f585f2d5f323031382d30322d32375f61745f31352e32312e33352e706e67',
     link: null,
-    github: 'https://github.com/kennymark/Flux-Weather'
+    github: 'https://github.com/kennymark/Flux-Weather',
+    color:'linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)'
   }
 ]
 
