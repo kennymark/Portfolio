@@ -30,7 +30,8 @@ export default function Projects() {
       <div>
         <h1 className='text-gray-800 '>More...</h1>
         {extraProjects.map((project, idx) => (
-          <div className="bg-gray-800 rounded  w-full p-3 shadow-2xl my-4" key={idx}>
+          <div className="bg-gray-800 rounded  w-full p-3 shadow-2xl my-4" key={idx} data-sal="slide-down" data-sal-delay="500"
+            data-sal-easing="ease">
             <div className="flex justify-between">
               <h2 className='capitalize text-white'>{project.name} </h2>
               <button className="px-6 py-0 rounded text-gray-100 bg-gray-900 outline-none ml-2 focus:outline-none hover:shadow-xl">

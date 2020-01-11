@@ -7,7 +7,6 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { animations } from 'react-animation'
 
 import Header from "./header"
 import "./layout.css"
@@ -28,9 +27,9 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container mx-auto mt-6">
-        <main style={{ animation: animations.fadeIn }}>
-          {children}</main>
-
+        <main data-sal='fade' data-sal-delay="100" data-sal-easing="ease" data-sal-duration='400'>
+          {children}
+        </main>
       </div>
       <footer className=' border-t w-full  mt-3 h-20 flex justify-center absolute'>
         <div className="self-center">

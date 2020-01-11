@@ -17,7 +17,7 @@ const IndexPage = () => (
 
       </div>
 
-      <div id="portfolio" className=' flex flex-1 justify-center mt-5 bg-yellow-400 rounded-lg  w-full shadow-xl' style={{ minHeight: 550 }}>
+      <div data-sal='slide-left' data-sal-duration='500' className=' flex flex-1 justify-center mt-5 bg-yellow-400 rounded-lg  w-full shadow-xl' style={{ minHeight: 550 }}>
         <div className='self-center mt-5 bg-white rounded-lg shadow-2xl ' style={{ minHeight: 400, width: '70%', marginTop: 80 }}>
           <button className='flex-1 self-end mt-5 bg-yellow-500 w-25 m-5 p-3 focus:outline-none hover:shadow-xl'>
             Portfolio
