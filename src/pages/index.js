@@ -44,10 +44,7 @@ const IndexPage = () => {
                 </div>
 
               ))}
-
-
             </Slider>
-
 
           </div>
         </div>
