@@ -7,9 +7,11 @@ export default function Contact() {
 
     <Layout>
       <SEO title="Contact" />
+
       <div className="flex-row lg:flex  justify-between p-3" data-sal='fade' data-sal-duration='400'>
         <div className=' flex flex-1 mt-5 rounded-lg shadow-base mr-3' >
           <form action="#" method="post" className="self-start mx-auto w-full ">
+            <h3>Email: <span className='font-light'>markcoffiekenneth@gmail.com</span></h3>
 
             <div className='mt-3 flex flex-col'>
               <label htmlFor="subject" className="text-gray-700">Subject</label>
@@ -29,15 +31,15 @@ export default function Contact() {
         </div>
 
         <div className=' flex-col flex-1 mt-5 sm:p-2'>
-          <div className=" w-full self-center mx-auto">
+          <div className="mt-12 w-full self-center mx-auto">
             <div className='flex-col w-full'>
               <label htmlFor="message" className="text-gray-700">Message</label>
               <textarea className="placeholder-gray-500 border p-3 w-full" rows="9" placeholder="I need a website" required type='message' id='message' />
             </div>
           </div>
           <div className='mt-3 flex flex-col'>
-              <button className="p-3 bg-yellow-600 my-3 outline-none">Send</button>
-            </div>
+            <button className="p-3 bg-yellow-600 my-3 outline-none">Send</button>
+          </div>
         </div>
 
       </div>
