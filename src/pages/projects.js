@@ -55,7 +55,7 @@ export default function Projects() {
   return (
     <Layout>
       <SEO title="Projects" />
-      <h1 className='text-gray-800 lg:text-left sm:text-center'>Top Projects</h1>
+      <h1 className='text-gray-800 lg:text-left sm:text-center mx-3'>Top Projects</h1>
       <Slider {...settings} data-sal='fade' data-sal-delay="100" data-sal-easing="ease" data-sal-duration='600' >
         {topProjects.map((project, idx) => (
           <div key={idx}>
@@ -82,7 +82,7 @@ export default function Projects() {
 
 
       <div class="flex-col">
-        <h1 className='text-gray-800 '>More...</h1>
+        <h1 className='text-gray-800 px-3'>More...</h1>
         {extraProjects.map((project, idx) => (
           <div className="bg-gray-800 rounded p-3 shadow-2xl my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
             data-sal-easing="ease" >

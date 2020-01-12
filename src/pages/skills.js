@@ -18,7 +18,7 @@ export default function Skills() {
     "Project management with Jira, Confluence, Git etc.", "Cross-browser dev/testing", "Agile (SCRUM)",
   ]
   const gradient = '#f6e05e'
-  const skillClasses = 'flex-1 mt-5 bg-gray-900 rounded-lg sm:w-full shadow m-3 px-6 pb-3'
+  const skillClasses = 'flex-1 bg-blue-500 mt-5 border rounded-lg sm:w-full shadow-lg m-3 px-6 pb-3'
 
   return (
 
@@ -27,38 +27,41 @@ export default function Skills() {
       <div className="flex-row lg:flex" data-sal="slide-down" data-sal-delay="200">
         <div className={skillClasses} >
           <h1 className="text-3xl text-center text-gray-200">Front-end</h1>
-          <ul className="self-center lg:w-2/4 mx-auto text-gray-400 p-6" >
+          <ul className="self-center mx-auto text-gray-200 p-6" >
             {frontEnd.map((skill, i) => <li key={i} className='my-1 text-lg'> {skill}</li>)}
           </ul>
         </div>
 
         <div className={skillClasses}  >
           <h1 className=" text-3xl text-center text-gray-200">Back-end</h1>
-          <ul className="justify-center lg:w-3/4 mx-auto text-gray-400 p-6">
+          <ul className="justify-center  mx-auto text-gray-200 p-6">
             {backend.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
           </ul>
         </div>
-      </div>
-
-      <div className="flex-row lg:flex mt-5" data-sal="slide-down" data-sal-delay="200">
-
-        <div className={skillClasses} data-sal="slide-down" data-sal-delay="200" >
+        
+         <div className={skillClasses}  >
           <h1 className="text-3xl text-center text-gray-200">Databases</h1>
-          <ul className="self-center w-3/4 mx-auto text-gray-400 p-6">
+          <ul className="self-center w-3/4 mx-auto text-gray-200 p-6">
             {databases.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
           </ul>
         </div>
+        
+      </div>
+
+      <div className="flex-row lg:flex mt-5" data-sal="slide-down" data-sal-delay="350">
+
+       
 
         <div className={skillClasses}>
           <h1 className='text-3xl text-center text-gray-200'>Devops</h1>
-          <ul className="self-center mx-auto    text-gray-400 p-6" >
+          <ul className="self-center mx-auto  text-gray-200 p-6" >
             {devops.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
           </ul>
         </div>
 
         <div className={skillClasses}>
           <h1 className='text-3xl text-center text-gray-200'>Extras</h1>
-          <ul className="self-center mx-auto text-gray-400 p-6" >
+          <ul className="self-center mx-auto text-gray-200 p-6" >
             {extra.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
           </ul>
         </div>

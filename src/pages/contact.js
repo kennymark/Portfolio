@@ -28,8 +28,8 @@ export default function Contact() {
           </form>
         </div>
 
-        <div className=' flex-col flex-1 mt-5 p-3 '>
-          <div className=" w-full self-center">
+        <div className=' flex-col flex-1 mt-5 sm:p-2'>
+          <div className=" w-full self-center mx-auto">
             <div className='flex-col w-full'>
               <label htmlFor="message" className="text-gray-700">Message</label>
               <textarea className="placeholder-gray-500 border p-3 w-full" rows="9" placeholder="I need a website" required type='message' id='message' />
