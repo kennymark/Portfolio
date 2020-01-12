@@ -11,7 +11,12 @@ export default function Contact() {
       <div className="flex-row lg:flex  justify-between p-3" data-sal='fade' data-sal-duration='400'>
         <div className=' flex flex-1 mt-5 rounded-lg shadow-base mr-3' >
           <form action="#" method="post" className="self-start mx-auto w-full ">
-            <h3>Email: <span className='font-light'>markcoffiekenneth@gmail.com</span></h3>
+            <h3 className='text-blue-600'>Email: <span className='font-light'>
+              <a href="mailto:markcoffiekenneth@gmail.com" className='text-blue-600'>
+                markcoffiekenneth@gmail.com
+            </a>
+            </span>
+            </h3>
 
             <div className='mt-3 flex flex-col'>
               <label htmlFor="subject" className="text-gray-700">Subject</label>
