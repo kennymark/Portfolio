@@ -55,7 +55,7 @@ export default function Projects() {
   return (
     <Layout>
       <SEO title="Projects" />
-      <h1 className='text-gray-800'>Top Projects</h1>
+      <h1 className='text-gray-800 lg:text-left sm:text-center'>Top Projects</h1>
       <Slider {...settings} data-sal='fade' data-sal-delay="100" data-sal-easing="ease" data-sal-duration='600' >
         {topProjects.map((project, idx) => (
           <div key={idx}>

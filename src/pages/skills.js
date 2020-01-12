@@ -24,15 +24,15 @@ export default function Skills() {
 
     <Layout>
       <SEO title="Home" />
-      <div className="flex-row lg:flex" data-sal='fade' >
-        <div className={skillClasses} data-sal-easing='ease' >
+      <div className="flex-row lg:flex" data-sal="slide-down" data-sal-delay="200">
+        <div className={skillClasses} >
           <h1 className="text-3xl text-center text-gray-200">Front-end</h1>
           <ul className="self-center lg:w-2/4 mx-auto text-gray-400 p-6" >
             {frontEnd.map((skill, i) => <li key={i} className='my-1 text-lg'> {skill}</li>)}
           </ul>
         </div>
 
-        <div className={skillClasses} data-sal-easing='ease' >
+        <div className={skillClasses}  >
           <h1 className=" text-3xl text-center text-gray-200">Back-end</h1>
           <ul className="justify-center lg:w-3/4 mx-auto text-gray-400 p-6">
             {backend.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
@@ -40,9 +40,9 @@ export default function Skills() {
         </div>
       </div>
 
-      <div className="flex-row lg:flex mt-5">
+      <div className="flex-row lg:flex mt-5" data-sal="slide-down" data-sal-delay="200">
 
-        <div className={skillClasses} data-sal-easing='ease' >
+        <div className={skillClasses} data-sal="slide-down" data-sal-delay="200" >
           <h1 className="text-3xl text-center text-gray-200">Databases</h1>
           <ul className="self-center w-3/4 mx-auto text-gray-400 p-6">
             {databases.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
@@ -64,10 +64,6 @@ export default function Skills() {
         </div>
 
       </div>
-
-
-
-
     </Layout>
 
   );
