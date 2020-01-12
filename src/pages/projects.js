@@ -20,7 +20,18 @@ export default function Projects() {
     centerPadding: "60px",
     focusOnSelect: false,
     swipeToSlide: true,
-    verticalMode:true
+    verticalMode: true,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+
+        }
+      }
+    ]
   };
 
   const showPage = (e) => {
@@ -62,10 +73,10 @@ export default function Projects() {
       </Slider>
 
 
-      <div>
+      <div class="flex-col">
         <h1 className='text-gray-800 '>More...</h1>
         {extraProjects.map((project, idx) => (
-          <div className="bg-gray-800 rounded p-3 shadow-2xl my-4 mx-auto" key={idx} data-sal="slide-down" data-sal-delay="200"
+          <div className="bg-gray-800 rounded p-3 shadow-2xl my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
             data-sal-easing="ease" >
             <div className="flex justify-between">
               <h2 className='capitalize text-white'>{project.name} </h2>

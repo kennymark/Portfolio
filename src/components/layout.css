@@ -24,6 +24,7 @@ body {
   font-feature-settings        : "kern", "liga", "clig", "calt";
   display                      : flex;
   flex-direction               : column;
+  overflow-x: hidden;
 }
 
 h1,
