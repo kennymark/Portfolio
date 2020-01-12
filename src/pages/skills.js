@@ -23,7 +23,7 @@ export default function Skills() {
 
     <Layout>
       <SEO title="Home" />
-      <div className="flex-row lg:flex mt-5">
+      <div className="flex-row lg:flex" data-sal='fade' >
         <div className='m-4 flex-1 mt-5 bg-gray-900 rounded-lg sm:w-full shadow-xl m-3 px-6 pb-3'  data-sal-easing='ease'>
           <h1 className="text-3xl text-center text-gray-200">Front-end</h1>
           <ul className="self-center mx-auto text-gray-400 p-6">
@@ -55,6 +55,12 @@ export default function Skills() {
         </ul>
       </div>
       
+        <div className='flex-1 mt-5 bg-gray-900 rounded-lg sm:w-full shadow-xl m-3 px-6 pb-3'>
+       <h1 className='text-3xl text-center text-gray-200'>Extras</h1>
+        <ul className="self-center mx-auto text-gray-400 p-6">
+          {extra.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
+        </ul>
+      </div>
       
       </div>
       

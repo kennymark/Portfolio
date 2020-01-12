@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container mx-auto mt-6">
-        <main data-sal='fade' data-sal-delay="100" data-sal-easing="ease" data-sal-duration='400'>
+        <main >
           {children}
         </main>
       </div>

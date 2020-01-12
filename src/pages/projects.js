@@ -20,7 +20,7 @@ export default function Projects() {
     centerPadding: "60px",
     focusOnSelect: false,
     swipeToSlide: true,
-
+    verticalMode:true
   };
 
   const showPage = (e) => {
@@ -37,7 +37,7 @@ export default function Projects() {
     <Layout>
       <SEO title="Projects" />
       <h1 className='text-gray-800'>Top Projects</h1>
-      <Slider {...settings}  >
+      <Slider {...settings} data-sal='fade' data-sal-delay="100" data-sal-easing="ease" data-sal-duration='600' >
         {topProjects.map((project, idx) => (
           <div key={idx}>
             <div className='flex-col content-between m-3 bg-gray-900 rounded-lg shadow p-3 h-full' role='{role}' onMouseEnter={showPage}
@@ -65,7 +65,7 @@ export default function Projects() {
       <div>
         <h1 className='text-gray-800 '>More...</h1>
         {extraProjects.map((project, idx) => (
-          <div className="bg-gray-800 rounded p-3 shadow-2xl my-4" key={idx} data-sal="slide-down" data-sal-delay="200"
+          <div className="bg-gray-800 rounded p-3 shadow-2xl my-4 mx-auto" key={idx} data-sal="slide-down" data-sal-delay="200"
             data-sal-easing="ease" >
             <div className="flex justify-between">
               <h2 className='capitalize text-white'>{project.name} </h2>
