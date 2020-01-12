@@ -4,9 +4,10 @@ export const topProjects = [
     name: 'react airbnb',
     status: 'live',
     description: 'a simple airbnb without the backend logic',
-    image: '',
+    image: 'https://raw.githubusercontent.com/kennymark/airbnb-clone-v2/master/screenshot/screenshot.jpg',
     link: 'https://react-airbnb.netlify.com/',
-    color:'linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)'
+    github: 'https://github.com/kennymark/airbnb-clone-v2',
+    color: 'linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)'
   },
   {
     name: 'good notes',
@@ -15,7 +16,7 @@ export const topProjects = [
     image: 'https://raw.githubusercontent.com/kennymark/Good-Notes/master/screenshots/main-page.png',
     link: 'https://goodnotes.netlify.com/',
     github: 'https://github.com/kennymark/Good-Notes',
-    color:'linear-gradient(to left, #ff5f6d, #ffc371)'
+    color: 'linear-gradient(to left, #ff5f6d, #ffc371)'
   },
   {
     name: 'petitions dashboard',
@@ -24,7 +25,7 @@ export const topProjects = [
     image: 'https://raw.githubusercontent.com/kennymark/petitions-dashboard/master/petitions.png',
     link: 'https://petitionsdashboard.netlify.com/',
     github: 'https://github.com/kennymark/petitions-dashboard',
-    color:'linear-gradient(to right, #136a8a, #267871)'
+    color: 'linear-gradient(to right, #136a8a, #267871)'
   },
   {
     name: 'user management app',
@@ -33,16 +34,16 @@ export const topProjects = [
     image: 'https://raw.githubusercontent.com/kennymark/express-starter/master/screenshots/account.png',
     link: 'https://express-kenny.herokuapp.com/',
     github: 'https://github.com/kennymark/express-starter',
-    color:'linear-gradient(to right, #b24592, #f15f79)'
+    color: 'linear-gradient(to right, #b24592, #f15f79)'
   },
   {
     name: 'angular hub',
     status: 'in-progress',
     description: 'a database for angular libraries and component that google failed to build',
-    image: null,
+    image: 'https://raw.githubusercontent.com/angular-hub/client/master/screenshot/home.jpg',
     link: 'https://angularhub.netlify.com/',
-    github: null,
-    color:'linear-gradient(to right, #fd746c, #ff9068)'
+    github: 'https://github.com/angular-hub/client',
+    color: 'linear-gradient(to right, #fd746c, #ff9068)'
   },
   {
     name: 'flux weather',
@@ -51,7 +52,7 @@ export const topProjects = [
     image: 'https://camo.githubusercontent.com/2545a369f71065156e739ffbdc3b7cf9238361d1/68747470733a2f2f7374617469632e6e6f74696f6e2d7374617469632e636f6d2f61643364303635642d373135392d346138302d386130362d6134353531666361663938642f53696d756c61746f725f53637265656e5f53686f745f2d5f6950686f6e655f585f2d5f323031382d30322d32375f61745f31352e32312e33352e706e67',
     link: null,
     github: 'https://github.com/kennymark/Flux-Weather',
-    color:'linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)'
+    color: 'linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)'
   }
 ]
 

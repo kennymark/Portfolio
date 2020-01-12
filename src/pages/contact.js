@@ -9,7 +9,7 @@ export default function Contact() {
       <SEO title="Contact" />
 
       <div className="flex-row lg:flex  justify-between p-3">
-        <div id="portfolio" className=' flex flex-1 mt-5 rounded-lg shadow-base mr-3' style={{ minHeight: 550 }}>
+        <div className=' flex flex-1 mt-5 rounded-lg shadow-base mr-3' style={{ minHeight: 550 }}>
           <form action="" method="post" className="self-center mx-auto w-full ">
 
             <div className='mt-3 flex flex-col'>
