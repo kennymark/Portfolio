@@ -34,6 +34,7 @@ const Layout = ({ children }) => {
       <footer className=' border-t w-full  mt-3 h-20 flex justify-center absolute'>
         <div className="self-center">
           Built with <span role='img' aria-label="love">❤️ </span> by Kenny Mark  ©{year}
+          <button className="btn shadow-sm bg-yellow-300 p-1 text-black focus:outline-none hover:shadow-xl hover:underline  ml-2">Resumé</button>
         </div>
         {/* <a href="https://www.gatsbyjs.org" target="">Gatsby</a> */}
       </footer>
