@@ -11,7 +11,7 @@ export default function Skills() {
     "Templating with hbs, ejs", "RESTFUL API Design/Dev", "GraphQL Server",
     "NPM, Nodejs, Gulp etc."
   ]
-  const databases = ["msSQL", "mySQL", "MongoDB", "Data modelling", "Normalization"]
+  const databases = ["MsSQL", "MySQL", "MongoDB", "Data modelling", "Normalization"]
   const devops = ["AWS EC2/S3", "Google  Cloud", "Git", "APIs", "CI/CD", "Testing (Unit, Integration)"]
 
   const extra = ["App design with Adobe XD", "App dev with React Native",
@@ -24,22 +24,23 @@ export default function Skills() {
     <Layout>
       <SEO title="Home" />
       <div className="flex-row lg:flex" data-sal="slide-down" data-sal-delay="200">
-        <div className={skillClasses} >
-          <h1 className="text-3xl text-center text-gray-200">Front-end</h1>
+
+        <div className={skillClasses} style={{ backgroundImage: '../images/front-end.svg', backgroundBlendMode: 'color' }}>
+          <h1 className="text-3xl text-center text-gray-200 mt-3">Front-end</h1>
           <ul className="self-center mx-auto text-gray-200 p-6" >
             {frontEnd.map((skill, i) => <li key={i} className='my-1 text-lg'> {skill}</li>)}
           </ul>
         </div>
 
         <div className={skillClasses}  >
-          <h1 className=" text-3xl text-center text-gray-200">Back-end</h1>
+          <h1 className=" text-3xl text-center text-gray-200 mt-3">Back-end</h1>
           <ul className="justify-center  mx-auto text-gray-200 p-6">
             {backend.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
           </ul>
         </div>
 
         <div className={skillClasses}  >
-          <h1 className="text-3xl text-center text-gray-200">Databases</h1>
+          <h1 className="text-3xl text-center text-gray-200 mt-3">Database</h1>
           <ul className="self-center w-3/4 mx-auto text-gray-200 p-6">
             {databases.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
           </ul>
@@ -52,14 +53,14 @@ export default function Skills() {
 
 
         <div className={skillClasses}>
-          <h1 className='text-3xl text-center text-gray-200'>Devops</h1>
+          <h1 className='text-3xl text-center text-gray-200 mt-3'>Devops</h1>
           <ul className="self-center mx-auto  text-gray-200 p-6" >
             {devops.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
           </ul>
         </div>
 
         <div className={skillClasses}>
-          <h1 className='text-3xl text-center text-gray-200'>Extras</h1>
+          <h1 className='text-3xl text-center text-gray-200 mt-3'>Extras</h1>
           <ul className="self-center mx-auto text-gray-200 p-6" >
             {extra.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
           </ul>

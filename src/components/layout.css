@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500|Work+Sans:400,500,700&display=swap');
-@import url('https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css');
+@import url(./tailwind.min.css);
 
 html {
   -ms-text-size-adjust    : 100%;
@@ -9,39 +9,35 @@ html {
 }
 
 body {
-  margin                       : 0;
-  -webkit-font-smoothing       : antialiased;
-  -moz-osx-font-smoothing      : grayscale;
-  font-family                  : 'Rubik', sans-serif;
-  height                       : 100%;
-  color                        : hsla(0, 0%, 0%, 0.8);
-  background                   : rgb(255, 255, 255) !important;
-  font-weight                  : normal;
-  word-wrap                    : break-word;
-  font-kerning                 : normal;
-  -moz-font-feature-settings   : "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings    : "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings        : "kern", "liga", "clig", "calt";
-  display                      : flex;
-  flex-direction               : column;
-  overflow-x                   : hidden;
-  font-weight                  : 400;
+  margin                          : 0;
+  -webkit-font-smoothing          : antialiased;
+  -moz-osx-font-smoothing         : grayscale;
+  font-family                     : 'Rubik', sans-serif;
+  height                          : 100%;
+  color                           : hsla(0, 0%, 0%, 0.8);
+  /* background                   : #f2f4f8 !important; */
+  font-weight                     : normal;
+  word-wrap                       : break-word;
+  font-kerning                    : normal;
+  -moz-font-feature-settings      : "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings       : "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings   : "kern", "liga", "clig", "calt";
+  font-feature-settings           : "kern", "liga", "clig", "calt";
+  display                         : flex;
+  flex-direction                  : column;
+  overflow-x                      : hidden;
+  font-weight                     : 400;
 }
 
 h1,
 h2,
 h3 {
-  line-height: 3rem;
+
   font-family: 'Work Sans', serif !important;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 
-h1 {
-  font-size: 2em;
-  margin   : 0.67em 0;
-}
 
 
 main {
@@ -61,18 +57,23 @@ main {
 
 
 .proj:hover {
-  transition   : transform .3s ease-out;
-  transform    : scale(1.1);
-  border-radius: 20px;
-  z-index      : 100;
+  z-index   : 100;
+  position  : absolute;
+  top       : -280px;
+  visibility: hidden;
 }
 
 .proj-description {
+  display   : none;
+  transition: all .3s ease-out;
 
-  display: none
 }
 
 .proj:hover>.proj-description {
-  display: flex;
-  ;
+  visibility: visible;
+  display   : flex;
+  position  : absolute;
+  height    : 280px;
+  max-width     : 360px;
+  left      : -15px;
 }

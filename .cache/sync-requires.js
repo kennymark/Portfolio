@@ -11,6 +11,7 @@ exports.components = {
   "component---src-pages-index-js": hot(preferDefault(require("/Users/kennymark/Desktop/Projects/React-apps/portfolio/src/pages/index.js"))),
   "component---src-pages-profile-js": hot(preferDefault(require("/Users/kennymark/Desktop/Projects/React-apps/portfolio/src/pages/profile.js"))),
   "component---src-pages-projects-js": hot(preferDefault(require("/Users/kennymark/Desktop/Projects/React-apps/portfolio/src/pages/projects.js"))),
-  "component---src-pages-skills-js": hot(preferDefault(require("/Users/kennymark/Desktop/Projects/React-apps/portfolio/src/pages/skills.js")))
+  "component---src-pages-skills-js": hot(preferDefault(require("/Users/kennymark/Desktop/Projects/React-apps/portfolio/src/pages/skills.js"))),
+  "component---src-pages-thanks-js": hot(preferDefault(require("/Users/kennymark/Desktop/Projects/React-apps/portfolio/src/pages/thanks.js")))
 }
 

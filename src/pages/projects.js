@@ -38,20 +38,21 @@ export default function Projects() {
   return (
     <Layout>
       <SEO title="Projects" />
-      <h1 className='text-gray-800 lg:text-left sm:text-center mx-3'>Top Projects</h1>
+      <h1 className='text-gray-800 lg:text-left sm:text-center mx-3 text-2xl'>Top Projects</h1>
       <Slider {...settings} data-sal='fade' data-sal-delay="100" data-sal-easing="ease" data-sal-duration='600' >
         {topProjects.map((project, idx) => (
 
-          <div className='cursor-pointer' >
-            <div className='flex-col content-between m-3 bg-gray-900 rounded-lg shadow p-3 h-full proj '
+          <div className='cursor-pointer' key={idx}>
+            <div className='flex-col content-between m-3 rounded-lg shadow p-3 h-full proj '
               style={{ background: project.color }} >
               <h2 className='flex justify-center capitalize text-white'>{project.name} </h2>
               <img src={project.image} alt='' className='object-contain h-48 w-full opacity-75' />
 
-              <div class='proj-description'>
-                <div className='flex-col content-between m-3 bg-gray-900 rounded-lg shadow p-3 h-full'
-                  style={{ minHeight: 300, maxHeight: 320, background: project.color }} >
-                  <p className="text-gray-100 text-md">{project.description}</p>
+
+              <div className='flex-col content-center  m-3 rounded-lg p-3 proj-description'
+                style={{ backgroundImage: project.color, backgroundColor: 'rgba(0,0,0,.4)', backgroundBlendMode: 'color' }} >
+                <p className="text-gray-100 text-md ">{project.description}</p>
+                <div className="buttons mt-10">
                   <button className="self-end px-6 py-1 rounded text-gray-600 bg-white outline-none mr-2 focus:outline-none hover:shadow-xl">
                     <a href={project.link} target='_blank' rel="noopener noreferrer"> View</a>
                   </button>
@@ -59,7 +60,9 @@ export default function Projects() {
                     <a href={project.github} target='_blank' rel="noopener noreferrer"> Source Code</a>
                   </button>
                 </div>
+
               </div>
+
 
             </div>
           </div>
@@ -69,9 +72,9 @@ export default function Projects() {
 
 
       <div class="flex-col">
-        <h1 className='text-gray-800 px-3'>More...</h1>
+        <h1 className='text-gray-800 px-3 text-2xl mt-10'>More...</h1>
         {extraProjects.map((project, idx) => (
-          <div className="bg-gray-800 rounded p-3 shadow-2xl my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
+          <div className="bg-gray-800 rounded p-3 shadow-2xl my-2 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
             data-sal-easing="ease" >
             <div className="flex justify-between">
               <h2 className='capitalize text-white'>{project.name} </h2>
@@ -81,7 +84,7 @@ export default function Projects() {
             </div>
             <p className='text-gray-500 w-4/5 normal-case'>{project.description}</p>
           </div>
-        ))}s
+        ))}
       </div>
 
     </Layout>
