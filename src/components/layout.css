@@ -2,31 +2,31 @@
 @import url(./tailwind.min.css);
 
 html {
-  -ms-text-size-adjust    : 100%;
+  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font                    : 112.5%/1.45em georgia, serif;
-  box-sizing              : border-box;
+  font: 112.5%/1.45em georgia, serif;
+  box-sizing: border-box;
 }
 
 body {
-  margin                          : 0;
-  -webkit-font-smoothing          : antialiased;
-  -moz-osx-font-smoothing         : grayscale;
-  font-family                     : 'Rubik', sans-serif;
-  height                          : 100%;
-  color                           : hsla(0, 0%, 0%, 0.8);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Rubik', sans-serif;
+  height: 100%;
+  color: hsla(0, 0%, 0%, 0.8);
   /* background                   : #f2f4f8 !important; */
-  font-weight                     : normal;
-  word-wrap                       : break-word;
-  font-kerning                    : normal;
-  -moz-font-feature-settings      : "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings       : "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings   : "kern", "liga", "clig", "calt";
-  font-feature-settings           : "kern", "liga", "clig", "calt";
-  display                         : flex;
-  flex-direction                  : column;
-  overflow-x                      : hidden;
-  font-weight                     : 400;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-weight: 400;
 }
 
 h1,
@@ -41,7 +41,7 @@ h3 {
 
 
 main {
-  flex      : 1;
+  flex: 1;
   min-height: 76vh;
 }
 
@@ -57,23 +57,23 @@ main {
 
 
 .proj:hover {
-  z-index   : 100;
-  position  : absolute;
-  top       : -280px;
+  z-index: 100;
+  position: absolute;
+  top: -275px;
   visibility: hidden;
 }
 
 .proj-description {
-  display   : none;
+  display: none;
   transition: all .3s ease-out;
 
 }
 
 .proj:hover>.proj-description {
   visibility: visible;
-  display   : flex;
-  position  : absolute;
-  height    : 280px;
-  max-width     : 360px;
-  left      : -15px;
+  display: flex;
+  position: absolute;
+  height: 285px;
+  max-width: 360px;
+  left: -15px;
 }

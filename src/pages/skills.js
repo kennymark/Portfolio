@@ -23,8 +23,8 @@ export default function Skills() {
 
     <Layout>
       <SEO title="Home" />
+      
       <div className="flex-row lg:flex" data-sal="slide-down" data-sal-delay="200">
-
         <div className={skillClasses} style={{ backgroundImage: '../images/front-end.svg', backgroundBlendMode: 'color' }}>
           <h1 className="text-3xl text-center text-gray-200 mt-3">Front-end</h1>
           <ul className="self-center mx-auto text-gray-200 p-6" >
