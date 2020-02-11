@@ -5,11 +5,11 @@ import React, { useState } from "react"
 const Header = ({ siteTitle }) => {
   const [isNavOpen, setNavOpen] = useState(false)
   const pages = [
-    { link: '/', name: 'home' },
-    { link: 'profile', name: 'profile' },
-    { link: 'projects', name: 'projects' },
-    { link: 'skills', name: 'skills' },
-    { link: 'contact', name: 'contact' },
+    { link: '/', name: 'Home' },
+    { link: 'profile', name: 'Profile' },
+    { link: 'projects', name: 'Projects' },
+    { link: 'skills', name: 'Skills' },
+    { link: 'contact', name: 'Contact' },
   ]
 
   const showLinks = () => {
@@ -27,8 +27,8 @@ const Header = ({ siteTitle }) => {
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div className="text-md text-center lg:flex-grow  lg:flex sm:absolute"  >
             {pages.map((page, key) =>
-              <Link to={page.link} key={key} className="lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-800 sm:mr-4 mr-2 "
-                activeClassName='text-gray-800 font-bold'>
+              <Link to={page.link} key={key} className="lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-700 sm:mr-4 mr-2 "
+                activeClassName='text-gray-600 font-bold'>
                 {page.name}
               </Link>
             )}

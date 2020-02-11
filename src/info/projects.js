@@ -73,7 +73,7 @@ export const extraProjects = [
   {
     name: 'fse-rec',
     description: 'The FSE-REC is an asp.net web app built by me and and 3 other friends as my second year work based learning project for the University. It includes functionality ranging from a SQl database, dynamic routing, login integration.',
-    link: null
+    link: 'https://codepen.io/kennymark/full/GmeGoa'
   },
   {
     name: 'text editor',

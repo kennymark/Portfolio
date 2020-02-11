@@ -1,10 +1,11 @@
-import React from 'react';
-import Layout from '../components/layout';
-import SEO from "../components/seo"
-import { extraProjects, topProjects } from '../info/projects';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useState } from 'react';
 import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import Layout from '../components/layout';
+import SEO from "../components/seo";
+import { extraProjects, topProjects } from '../info/projects';
+// import ReactCardFlip from 'react-card-flip';
 
 export default function Projects() {
   const settings = {
@@ -24,33 +25,15 @@ export default function Projects() {
     responsive: [
       {
         breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false,
-
-        }
+        settings: { slidesToShow: 1, slidesToScroll: 1, centerMode: false, }
       },
-       {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
-          }
-        },
+      {
+        breakpoint: 800,
+        settings: { slidesToShow: 2, slidesToScroll: 2, initialSlide: 2 }
+      },
     ]
   };
 
-  const showPage = (e) => {
-    e.stopPropagation()
-    console.log(e.target)
-  }
-
-  const removePage = (e) => {
-    e.stopPropagation()
-    console.log(e.target)
-  }
 
   return (
     <Layout>
@@ -58,25 +41,29 @@ export default function Projects() {
       <h1 className='text-gray-800 lg:text-left sm:text-center mx-3'>Top Projects</h1>
       <Slider {...settings} data-sal='fade' data-sal-delay="100" data-sal-easing="ease" data-sal-duration='600' >
         {topProjects.map((project, idx) => (
-          <div key={idx}>
-            <div className='flex-col content-between m-3 bg-gray-900 rounded-lg shadow p-3 h-full' role='{role}' onMouseEnter={showPage}
-              onMouseLeave={removePage}
-              style={{ minHeight: 300, maxHeight: 320, background: project.color }} >
+
+          <div className='cursor-pointer' >
+            <div className='flex-col content-between m-3 bg-gray-900 rounded-lg shadow p-3 h-full proj '
+              style={{ background: project.color }} >
               <h2 className='flex justify-center capitalize text-white'>{project.name} </h2>
               <img src={project.image} alt='' className='object-contain h-48 w-full opacity-75' />
 
-              {/* <div className='flex-1 absolute bg-black m-3 top-0 mx-auto bg-gray-900 rounded-lg p-3' style={{ width: 360, minHeight: 'inherit' }}>
-                <p className='text-gray-100 '>{project.description}</p>
-                <button className="self-end px-6 py-1 rounded text-gray-600 bg-white outline-none mr-2 focus:outline-none hover:shadow-xl">
-                  <a href={project.link} target='_blank' rel="noopener noreferrer"> View</a>
-                </button>
-                <button className="self-end px-6 py-1 rounded text-gray-600 bg-white outline-none  focus:outline-none hover:shadow-xl">
-                  <a href={project.github} target='_blank' rel="noopener noreferrer"> Source Code</a>
-                </button>
-              </div> */}
+              <div class='proj-description'>
+                <div className='flex-col content-between m-3 bg-gray-900 rounded-lg shadow p-3 h-full'
+                  style={{ minHeight: 300, maxHeight: 320, background: project.color }} >
+                  <p className="text-gray-100 text-md">{project.description}</p>
+                  <button className="self-end px-6 py-1 rounded text-gray-600 bg-white outline-none mr-2 focus:outline-none hover:shadow-xl">
+                    <a href={project.link} target='_blank' rel="noopener noreferrer"> View</a>
+                  </button>
+                  <button className="self-end px-6 py-1 rounded text-gray-600 bg-white outline-none  focus:outline-none hover:shadow-xl">
+                    <a href={project.github} target='_blank' rel="noopener noreferrer"> Source Code</a>
+                  </button>
+                </div>
+              </div>
 
             </div>
           </div>
+
         ))}
       </Slider>
 
@@ -94,11 +81,8 @@ export default function Projects() {
             </div>
             <p className='text-gray-500 w-4/5 normal-case'>{project.description}</p>
           </div>
-        ))}
-
-
+        ))}s
       </div>
-
 
     </Layout>
   );
