@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => {
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div className="text-md text-center lg:flex-grow  lg:flex sm:absolute"  >
             {pages.map((page, key) =>
-              <Link to={page.link} key={key} className="lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-700 sm:mr-3 mr-1 "
+              <Link to={page.link} key={key} className="lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-700 sm:mr-4 mr-3 "
                 activeClassName='text-gray-900 '>
                 {page.name}
               </Link>
