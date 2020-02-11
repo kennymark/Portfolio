@@ -49,14 +49,14 @@ export default function Projects() {
               <img src={project.image} alt='' className='object-contain h-48 w-full opacity-75' />
 
 
-              <div className='flex-col content-center  m-3 rounded-lg p-3 proj-description'
+              <div className='flex-col items-center  m-3 rounded-lg p-3 proj-description'
                 style={{ backgroundImage: project.color, backgroundColor: 'rgba(0,0,0,.4)', backgroundBlendMode: 'color' }} >
                 <p className="text-gray-100 text-md ">{project.description}</p>
                 <div className="buttons mt-10">
-                  <button className="self-end px-6 py-1 rounded text-gray-600 bg-white outline-none mr-2 focus:outline-none hover:shadow-xl">
+                  <button className=" px-6 py-1 rounded text-gray-600 bg-white outline-none mr-2 focus:outline-none hover:shadow-xl">
                     <a href={project.link} target='_blank' rel="noopener noreferrer"> View</a>
                   </button>
-                  <button className="self-end px-6 py-1 rounded text-gray-600 bg-white outline-none  focus:outline-none hover:shadow-xl">
+                  <button className=" px-6 py-1 rounded text-gray-600 bg-white outline-none  focus:outline-none hover:shadow-xl">
                     <a href={project.github} target='_blank' rel="noopener noreferrer"> Source Code</a>
                   </button>
                 </div>
