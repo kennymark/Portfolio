@@ -57,7 +57,7 @@ export default function Projects() {
                     <a href={project.link} target='_blank' rel="noopener noreferrer"> View</a>
                   </button>
                   <button className=" px-6 py-1 rounded text-gray-600 bg-white outline-none  focus:outline-none hover:shadow-xl">
-                    <a href={project.github} target='_blank' rel="noopener noreferrer"> Source Code</a>
+                    <a href={project.github} target='_blank' rel="noopener noreferrer"> Github</a>
                   </button>
                 </div>
 
