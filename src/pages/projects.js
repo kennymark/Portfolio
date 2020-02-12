@@ -49,7 +49,7 @@ export default function Projects() {
               <img src={project.image} alt='' className='object-contain h-48 w-full opacity-75' />
 
 
-              <div className='flex-col items-center  m-3 rounded-lg p-3 proj-description'
+              <div className='flex-col items-center  m-3 rounded-lg p-10 proj-description'
                 style={{ backgroundImage: project.color, backgroundColor: 'rgba(0,0,0,.4)', backgroundBlendMode: 'color' }} >
                 <p className="text-gray-100 text-md ">{project.description}</p>
                 <div className="buttons mt-10">
