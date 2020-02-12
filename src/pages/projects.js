@@ -74,7 +74,7 @@ export default function Projects() {
       <div className="flex-col">
         <h1 className='text-gray-800 px-3 text-2xl mt-10'>More...</h1>
         {extraProjects.map((project, idx) => (
-          <div className="bg-gray-800 rounded p-3 shadow-2xl my-2 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
+          <div className="bg-gray-800 rounded p-3 shadow-xl my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
             data-sal-easing="ease" >
             <div className="flex justify-between">
               <h2 className='capitalize text-gray-300'>{project.name} </h2>
