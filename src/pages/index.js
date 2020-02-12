@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { topProjects } from '../info/projects';
+import { Link } from "gatsby";
 
 const IndexPage = () => {
   const settings = {
@@ -16,22 +17,24 @@ const IndexPage = () => {
     fade: true,
     autoplay: true,
     arrows: false,
-    dots:true
+    dots: true
   };
   return (
     <Layout>
       <SEO title="Home" />
       <div className="flex-row  lg:flex p-3">
-        <div className=" flex-1" data-sal='slide-right' data-sal-duration='800'>
+        <div className=" flex-1 self-center" data-sal='slide-right' data-sal-duration='500'>
           <h1 className='text-6xl leading-none text-gray-800 my-6 leading-6 '>
             Hi there... <br /> I build on the web</h1>
           <p className='text-lg text-gray-600'> JavaScript front-end & back-end developer</p>
           <p className='text-lg text-gray-600'> Chester, England</p>
 
-          <button className="btn shadow-sm mt-5 bg-yellow-400 p-4 text-black focus:outline-none hover:shadow-xl">Contact Me</button>
+          <div className="btn mt-10">
+            <Link to='/contact' className="shadow-sm bg-yellow-400 p-3 text-gray-800 hover:shadow-xl hover:text-black mr-3">Contact Me</Link>
+          </div>
         </div>
 
-        <div data-sal='slide-left' data-sal-duration='500' className='flex flex-1 justify-center mt-5 bg-yellow-400 rounded-lg  w-full shadow-xl' style={{ minHeight: 550 }}>
+        <div data-sal='slide-left' data-sal-duration='400' className='flex flex-1 justify-center mt-5 bg-yellow-400 rounded-lg  w-full shadow-xl' style={{ minHeight: 550 }}>
 
           <div className='flex-col self-center mt-5 bg-gray-200 rounded-lg shadow-2xl ' style={{ minHeight: 400, width: '80%', maxWidth: 500 }}>
             <Slider {...settings}>
@@ -43,7 +46,6 @@ const IndexPage = () => {
                     {project.name}
                   </p>
                 </div>
-
               ))}
             </Slider>
 

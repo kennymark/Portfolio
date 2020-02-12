@@ -77,3 +77,10 @@ main {
   max-width: 360px;
   left: -15px;
 }
+
+.img-container {
+  height: inherit;
+  position: absolute;
+  background: #000;
+  z-index: 11;
+}
