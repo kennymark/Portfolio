@@ -53,12 +53,11 @@ export default function Projects() {
                 style={{ backgroundImage: project.color, backgroundColor: 'rgba(0,0,0,.4)', backgroundBlendMode: 'color' }} >
                 <p className="text-gray-100 text-md ">{project.description}</p>
                 <div className="buttons mt-10">
-                  <button className=" px-6 py-1 rounded text-gray-600 bg-white outline-none mr-2 focus:outline-none hover:shadow-xl">
-                    <a href={project.link} target='_blank' rel="noopener noreferrer"> View</a>
-                  </button>
-                  <button className=" px-6 py-1 rounded text-gray-600 bg-white outline-none  focus:outline-none hover:shadow-xl">
-                    <a href={project.github} target='_blank' rel="noopener noreferrer"> Github</a>
-                  </button>
+
+                  <a href={project.link} target='_blank' rel="noopener noreferrer" className=' px-6 py-2 rounded text-gray-600 bg-white mr-2  hover:shadow-2xl'> View</a>
+
+                  <a href={project.github} target='_blank' rel="noopener noreferrer" className='px-6 py-2 rounded text-gray-600 bg-white  hover:shadow-2xl'> Github</a>
+
                 </div>
 
               </div>
@@ -77,10 +76,10 @@ export default function Projects() {
           <div className="bg-gray-800 rounded p-3 shadow-xl my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
             data-sal-easing="ease" >
             <div className="flex justify-between">
-              <h2 className='capitalize text-gray-300'>{project.name} </h2>
-              <button className="px-6 py-0 h-8 rounded text-gray-100 bg-gray-900 outline-none ml-2 focus:outline-none hover:shadow-xl">
-                <a href={project.link} target='_blank' rel="noopener noreferrer"> View</a>
-              </button>
+              <h2 className='capitalize text-gray-400'>{project.name} </h2>
+
+              <a href={project.link} target='_blank' rel="noopener noreferrer" class='px-6 py-1  rounded text-gray-100 bg-gray-900 ml-2 focus:outline-none hover:shadow-xl'> View</a>
+
             </div>
             <p className='text-gray-500 w-4/5 normal-case'>{project.description}</p>
           </div>
