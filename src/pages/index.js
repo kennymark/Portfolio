@@ -15,7 +15,8 @@ const IndexPage = () => {
     className: 'w-full  mx-auto flex-1',
     fade: true,
     autoplay: true,
-    arrows: false
+    arrows: false,
+    dots:true
   };
   return (
     <Layout>
