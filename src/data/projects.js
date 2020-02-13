@@ -21,7 +21,7 @@ export const topProjects = [
   {
     name: 'good notes',
     status: 'live',
-    description: 'A simple note taking application built with React and Firebase auth and db',
+    description: 'A simple note taking application built with React and Firebase Auth and Firestore',
     image: 'https://raw.githubusercontent.com/kennymark/Good-Notes/master/screenshots/main-page.png',
     link: 'https://goodnotes.netlify.com/',
     github: 'https://github.com/kennymark/Good-Notes',
