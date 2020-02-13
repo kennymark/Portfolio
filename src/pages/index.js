@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { topProjects } from '../info/projects';
+import { topProjects } from '../data/projects';
 import { Link } from "gatsby";
 
 const IndexPage = () => {

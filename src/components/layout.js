@@ -9,12 +9,12 @@ import React from "react"
 import { useStaticQuery, graphql as gql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import "../styles/layout.css"
 
 const Layout = ({ children }) => {
   const year = new Date().getFullYear() || '2020'
   const data = useStaticQuery(gql`
-    query SiteTitleQuery {
+    query SiteAndFileData {
       site {
         siteMetadata {
           title
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
       <footer className=' border-t w-full  mt-3 h-20 flex justify-center absolute'>
         <div className="self-center text-center">
           Built with <span role='img' aria-label="love">❤️ </span> by Kenny Mark  ©{year}
-          <a href={data.allFile.edges[0].node.publicURL} rel="noopener noreferrer" target='_blank' ßclassName="btn shadow-sm bg-yellow-300 p-1 text-black focus:outline-none hover:shadow-xl hover:underline  ml-2">View CV</a>
+          <a href={data.allFile.edges[0].node.publicURL} target='_blank' className=" ml-3 rounded shadow-sm bg-yellow-300 p-2 text-gray-700 hover:shadow-xl hover:text-black" rel="noopener noreferrer">View CV</a>
         </div>
 
       </footer>

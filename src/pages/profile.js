@@ -14,7 +14,7 @@ export default function Profiles() {
           </p>
         <p className='text-xl mt-2 text-gray-600 leading-snug'>
           I actively spend many hours per day working on my side projects which can be found on
-          <mark> <a href="https://github.com/kennymark" target="_blank" rel="noopener noreferrer" >github</a></mark>. Software development aside, I am also heavily invested in the creation and nurturing of ideas that are used by the masses. I incline to be entrepreneurial at times and product design would be an area I would love to explore and competent at. I see beyond code and design.
+          <span className='bg-yellow-200 p-1 text-gray-700'> <a href="https://github.com/kennymark" target="_blank" rel="noopener noreferrer" >github</a></span>. Software development aside, I am also heavily invested in the creation and nurturing of ideas that are used by the masses. I incline to be entrepreneurial at times and product design would be an area I would love to explore and competent at. I see beyond code and design.
           </p>
       </div>
     </Layout>

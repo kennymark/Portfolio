@@ -1,16 +1,27 @@
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from "../components/seo"
+import email from '../images/email.svg'
+
 
 export default function Contact() {
-  return (
+  const imgStyle = {
+    position: 'fixed',
+    zIndex: -6,
+    opacity: 0.7,
+    height: 149,
+    top: '55%',
+    transform: 'translateX(50%)'
+  }
 
+
+  return (
     <Layout>
       <SEO title="Contact" />
+      <img src={email} style={imgStyle} className='' alt='front end ' height='50' />
+      <div className="p-3" data-sal='fade' data-sal-duration='400' style={{ zIndex: 21 }}>
 
-      <div className="p-3" data-sal='fade' data-sal-duration='400'>
-
-        <form action="https://getform.io/f/c4f252bb-d674-4113-9ff6-1a280733fed3" method="post" className="flex-row "
+        <form action="https://getform.io/f/c4f252bb-d674-4113-9ff6s-1a280733fed3" method="post" className="flex-row "
           data-netlify='true'>
 
           <div className="flex-row lg:flex">

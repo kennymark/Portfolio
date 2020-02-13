@@ -1,48 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import Layout from '../components/layout';
 import SEO from "../components/seo";
-import { extraProjects, topProjects } from '../info/projects';
-// import ReactCardFlip from 'react-card-flip';
+import { extraProjects, topProjects } from '../data/projects';
+import { carouselSettings } from '../data/data';
+
 
 export default function Projects() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
-    className: 'w-full',
-    centerMode: true,
-    centerPadding: "60px",
-    focusOnSelect: false,
-    swipeToSlide: true,
-    verticalMode: true,
-    responsive: [
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1, slidesToScroll: 1, centerMode: false, }
-      },
-      {
-        breakpoint: 800,
-        settings: { slidesToShow: 2, slidesToScroll: 2, initialSlide: 2 }
-      },
-    ]
-  };
-
+  const viewProject = (project) => {
+    console.log(project)
+  }
 
   return (
     <Layout>
       <SEO title="Projects" />
       <h1 className='text-gray-800 lg:text-left sm:text-center mx-3 text-2xl'>Top Projects</h1>
-      <Slider {...settings} data-sal='fade' data-sal-delay="100" data-sal-easing="ease" data-sal-duration='600' >
+      <Slider {...carouselSettings} data-sal='fade' data-sal-delay="100" data-sal-easing="ease" data-sal-duration='600' >
         {topProjects.map((project, idx) => (
 
-          <div className='cursor-pointer' key={idx}>
+          <div className='cursor-pointer' key={idx} onClick={() => viewProject(project)}>
             <div className='flex-col content-between m-3 rounded-lg shadow p-3 h-full proj '
               style={{ background: project.color }} >
               <h2 className='flex justify-center capitalize text-white'>{project.name} </h2>
@@ -78,7 +56,7 @@ export default function Projects() {
             <div className="flex justify-between">
               <h2 className='capitalize text-gray-400'>{project.name} </h2>
 
-              <a href={project.link} target='_blank' rel="noopener noreferrer" class='px-6 py-1  rounded text-gray-100 bg-gray-900 ml-2 focus:outline-none hover:shadow-xl'> View</a>
+              <a href={project.link} target='_blank' rel="noopener noreferrer" className='px-6 py-1  rounded text-gray-100 bg-gray-900 ml-2 focus:outline-none hover:shadow-xl'> View</a>
 
             </div>
             <p className='text-gray-500 w-4/5 normal-case'>{project.description}</p>

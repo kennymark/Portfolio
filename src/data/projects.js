@@ -3,14 +3,14 @@ export const topProjects = [
   {
     name: 'react airbnb',
     status: 'live',
-    description: 'A simple airbnb without the backend logic',
+    description: 'A simple airbnb clone without the backend logic',
     image: 'https://raw.githubusercontent.com/kennymark/airbnb-clone-v2/master/screenshot/screenshot.jpg',
     link: 'https://react-airbnb.netlify.com/',
     github: 'https://github.com/kennymark/airbnb-clone-v2',
     color: 'linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)'
   },
   {
-    name: 'CompraBueno E-Commerce Store',
+    name: 'Fullstack e-commerce Store',
     status: 'live',
     description: 'A full stack application built with Node, Firebase, VueJs and Stripe for payments ',
     image: 'https://raw.githubusercontent.com/kennymark/compra-bueno/master/screenshots/adminpage.png',
@@ -21,7 +21,7 @@ export const topProjects = [
   {
     name: 'good notes',
     status: 'live',
-    description: 'A simple note taking application built with react and firebase',
+    description: 'A simple note taking application built with React and Firebase auth and db',
     image: 'https://raw.githubusercontent.com/kennymark/Good-Notes/master/screenshots/main-page.png',
     link: 'https://goodnotes.netlify.com/',
     github: 'https://github.com/kennymark/Good-Notes',
@@ -57,7 +57,7 @@ export const topProjects = [
   {
     name: 'flux weather',
     status: 'in-progress',
-    description: 'A beautiful weather app built in react-native expo',
+    description: 'A beautiful cross platform weather app built in React-Native expo',
     image: 'https://camo.githubusercontent.com/2545a369f71065156e739ffbdc3b7cf9238361d1/68747470733a2f2f7374617469632e6e6f74696f6e2d7374617469632e636f6d2f61643364303635642d373135392d346138302d386130362d6134353531666361663938642f53696d756c61746f725f53637265656e5f53686f745f2d5f6950686f6e655f585f2d5f323031382d30322d32375f61745f31352e32312e33352e706e67',
     link: null,
     github: 'https://github.com/kennymark/Flux-Weather',
