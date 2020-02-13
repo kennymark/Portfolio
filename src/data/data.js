@@ -15,7 +15,7 @@ export const carouselSettings = {
     responsive: [
         {
             breakpoint: 650,
-            settings: { slidesToShow: 1, slidesToScroll: 1, centerMode: true, }
+            settings: { slidesToShow: 1, slidesToScroll: 1, centerMode: false, }
         },
         {
             breakpoint: 950,
