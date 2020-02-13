@@ -2,11 +2,14 @@ var plugins = [{
       plugin: require('/Users/kennymark/Desktop/Projects/React-apps/portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/kennymark/Desktop/Projects/React-apps/portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Kenny Mark Portfolio","short_name":"Kenny Mark","start_url":"/","background_color":"#ecc94b","theme_color":"#f6e05e","display":"minimal-ui","icon":"src/images/gatsby-icon.png"},
-    },{
       plugin: require('/Users/kennymark/Desktop/Projects/React-apps/portfolio/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('/Users/kennymark/Desktop/Projects/React-apps/portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"Kenny Mark Portfolio","short_name":"Kenny Mark","start_url":"/","background_color":"#ecc94b","theme_color":"#f6e05e","display":"minimal-ui","icon":"src/images/favicon.png"},
+    },{
+      plugin: require('/Users/kennymark/Desktop/Projects/React-apps/portfolio/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-68267074-2","head":true},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

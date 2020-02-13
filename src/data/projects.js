@@ -1,15 +1,6 @@
 
 export const topProjects = [
   {
-    name: 'react airbnb',
-    status: 'live',
-    description: 'A simple airbnb clone without the backend logic',
-    image: 'https://raw.githubusercontent.com/kennymark/airbnb-clone-v2/master/screenshot/screenshot.jpg',
-    link: 'https://react-airbnb.netlify.com/',
-    github: 'https://github.com/kennymark/airbnb-clone-v2',
-    color: 'linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)'
-  },
-  {
     name: 'Fullstack e-commerce Store',
     status: 'live',
     description: 'A full stack application built with Node, Firebase, VueJs and Stripe for payments ',
@@ -17,6 +8,15 @@ export const topProjects = [
     link: 'https://comprabueno.netlify.com/',
     github: 'https://github.com/kennymark/compra-bueno',
     color: 'linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)'
+  },
+  {
+    name: 'Fullstack JavaScript Boilerplate',
+    status: 'live',
+    description: 'Comes built with in email, twitter,facebook, github authentication, password recovery etc.',
+    image: 'https://raw.githubusercontent.com/kennymark/express-starter/master/screenshots/account.png',
+    link: 'https://express-kenny.herokuapp.com/',
+    github: 'https://github.com/kennymark/express-starter',
+    color: 'linear-gradient(to right, #b24592, #f15f79)'
   },
   {
     name: 'good notes',
@@ -28,22 +28,22 @@ export const topProjects = [
     color: 'linear-gradient(to left, #ff5f6d, #ffc371)'
   },
   {
+    name: 'react airbnb',
+    status: 'live',
+    description: 'A simple airbnb clone without the backend logic',
+    image: 'https://raw.githubusercontent.com/kennymark/airbnb-clone-v2/master/screenshot/screenshot.jpg',
+    link: 'https://react-airbnb.netlify.com/',
+    github: 'https://github.com/kennymark/airbnb-clone-v2',
+    color: 'linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)'
+  },
+  {
     name: 'petitions dashboard',
     status: 'live',
-    description: 'A SPA that extracts valuable insight into uk parliamentary petition data with just a simple url.',
+    description: 'A SPA that extracts valuable insight into UK parliamentary petition data with just a simple url.',
     image: 'https://raw.githubusercontent.com/kennymark/petitions-dashboard/master/petitions.png',
     link: 'https://petitionsdashboard.netlify.com/',
     github: 'https://github.com/kennymark/petitions-dashboard',
     color: 'linear-gradient(to right, #136a8a, #267871)'
-  },
-  {
-    name: 'user management app',
-    status: 'live',
-    description: 'Comes built with in email, twitter,facebook, github authentication, password recovery,',
-    image: 'https://raw.githubusercontent.com/kennymark/express-starter/master/screenshots/account.png',
-    link: 'https://express-kenny.herokuapp.com/',
-    github: 'https://github.com/kennymark/express-starter',
-    color: 'linear-gradient(to right, #b24592, #f15f79)'
   },
   {
     name: 'angular hub',

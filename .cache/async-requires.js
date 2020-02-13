@@ -8,7 +8,6 @@ exports.components = {
   "component---src-pages-index-js": () => import("../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-profile-js": () => import("../src/pages/profile.js" /* webpackChunkName: "component---src-pages-profile-js" */),
   "component---src-pages-projects-js": () => import("../src/pages/projects.js" /* webpackChunkName: "component---src-pages-projects-js" */),
-  "component---src-pages-skills-js": () => import("../src/pages/skills.js" /* webpackChunkName: "component---src-pages-skills-js" */),
-  "component---src-pages-thanks-js": () => import("../src/pages/thanks.js" /* webpackChunkName: "component---src-pages-thanks-js" */)
+  "component---src-pages-skills-js": () => import("../src/pages/skills.js" /* webpackChunkName: "component---src-pages-skills-js" */)
 }
 

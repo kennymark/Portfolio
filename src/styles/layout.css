@@ -47,7 +47,8 @@ main {
 
 
 ::selection {
-  background-color: #f6e05e;
+  background-color: #ecc94b;
+  color:#fff
 }
 
 .proj {

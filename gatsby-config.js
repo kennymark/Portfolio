@@ -1,12 +1,15 @@
 module.exports = {
   siteMetadata: {
     title: `Full Stack Web Developer`,
-    description: `Kenny Mark's Personal Website. I am software engineer based in Cheshire. I primarily work with the web, backend and front-end but I love me some mobile react native. Currently employed at Trelleborg Marine System`,
+    description: `Kenny Mark's Personal Website. I am software engineer based in Cheshire. I am a front-end dev with fullstack experience who loves to code and build cool stuff. Currently employed at Sabs Travel Technologies`,
     author: `@mrkennymark`,
   },
   plugins: [
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-offline`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -14,8 +17,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -25,11 +26,12 @@ module.exports = {
         background_color: `#ecc94b`,
         theme_color: `#f6e05e`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: { trackingId: "UA-68267074-2", head: true, },
+    },
   ],
 }
