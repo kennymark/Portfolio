@@ -12,7 +12,7 @@ export const topProjects = [
   {
     name: 'Fullstack JavaScript Boilerplate',
     status: 'live',
-    description: 'Comes built with in email, twitter,facebook, github authentication, password recovery etc.',
+    description: 'Express based app with email + social auth, password recovery, email etc.',
     image: 'https://raw.githubusercontent.com/kennymark/express-starter/master/screenshots/account.png',
     link: 'https://express-kenny.herokuapp.com/',
     github: 'https://github.com/kennymark/express-starter',
@@ -21,7 +21,7 @@ export const topProjects = [
   {
     name: 'good notes',
     status: 'live',
-    description: 'A simple note taking application built with React and Firebase Auth and Firestore',
+    description: 'A simple note taking application built with React and Firebase Auth and Firestore.',
     image: 'https://raw.githubusercontent.com/kennymark/Good-Notes/master/screenshots/main-page.png',
     link: 'https://goodnotes.netlify.com/',
     github: 'https://github.com/kennymark/Good-Notes',
@@ -30,7 +30,7 @@ export const topProjects = [
   {
     name: 'react airbnb',
     status: 'live',
-    description: 'A simple airbnb clone without the backend logic',
+    description: 'A simple airbnb clone without the backend logic.',
     image: 'https://raw.githubusercontent.com/kennymark/airbnb-clone-v2/master/screenshot/screenshot.jpg',
     link: 'https://react-airbnb.netlify.com/',
     github: 'https://github.com/kennymark/airbnb-clone-v2',
@@ -48,7 +48,7 @@ export const topProjects = [
   {
     name: 'angular hub',
     status: 'in-progress',
-    description: 'An idea for a database for Angular libraries and components that google failed to build',
+    description: 'An idea for a database for Angular libraries and components that google failed to build.',
     image: 'https://raw.githubusercontent.com/angular-hub/client/master/screenshot/home.jpg',
     link: 'https://angularhub.netlify.com/',
     github: 'https://github.com/angular-hub/client',
@@ -57,7 +57,7 @@ export const topProjects = [
   {
     name: 'flux weather',
     status: 'in-progress',
-    description: 'A beautiful cross platform weather app built in React-Native expo',
+    description: 'A beautiful cross platform weather app built in React-Native expo.',
     image: 'https://camo.githubusercontent.com/2545a369f71065156e739ffbdc3b7cf9238361d1/68747470733a2f2f7374617469632e6e6f74696f6e2d7374617469632e636f6d2f61643364303635642d373135392d346138302d386130362d6134353531666361663938642f53696d756c61746f725f53637265656e5f53686f745f2d5f6950686f6e655f585f2d5f323031382d30322d32375f61745f31352e32312e33352e706e67',
     link: null,
     github: 'https://github.com/kennymark/Flux-Weather',
@@ -86,17 +86,17 @@ export const extraProjects = [
   },
   {
     name: 'text editor',
-    description: 'This is a web based text editor that does real time text analysis using natural language processing via the compromise.cool and rita.js libraries',
+    description: 'This is a web based text editor that does real time text analysis using natural language processing via the compromise.cool and rita.js libraries.',
     link: 'https://codepen.io/kennymark/full/KmRVjp/'
   },
   {
     name: 'simple card design',
-    description: 'A showcase of my skills to reproduce pixel by pixel a projuct after it has been designed by a designer using normal front-end technologies',
+    description: 'A showcase of my skills to reproduce pixel by pixel a projuct after it has been designed by a designer using normal front-end technologies.',
     link: 'https://codepen.io/kennymark/full/LGxpNz/'
   },
   {
     name: 'JS KeyCode Finder',
     description: 'The JS key code finder is a simple tool that detect which key has been pressed and then gives you its key code number. ',
-    link: 'https://keycodefinder.netlify.com/'
+    link: 'https://keycodefinder.netlify.com/.'
   }
 ]

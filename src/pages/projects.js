@@ -28,18 +28,16 @@ export default function Projects() {
 
 
               <div className='flex-col items-center  m-3 rounded-lg p-10 proj-description'
-                style={{ backgroundImage: project.color, backgroundColor: 'rgba(0,0,0,.4)', backgroundBlendMode: 'color' }} >
+                style={{ backgroundImage: project.color, backgroundColor: 'rgba(0,0,0,.5)', backgroundBlendMode: 'color' }} >
                 <p className="text-gray-100 text-md ">{project.description}</p>
+
                 <div className="buttons mt-10">
+                  <a href={project.link} target='_blank' rel="noopener noreferrer" className=' px-6 py-2 rounded text-gray-600 bg-white mr-2  hover:bg-black hover:text-gray-100'> View</a>
 
-                  <a href={project.link} target='_blank' rel="noopener noreferrer" className=' px-6 py-2 rounded text-gray-600 bg-white mr-2  hover:shadow-2xl'> View</a>
-
-                  <a href={project.github} target='_blank' rel="noopener noreferrer" className='px-6 py-2 rounded text-gray-600 bg-white  hover:shadow-2xl'> Github</a>
-
+                  <a href={project.github} target='_blank' rel="noopener noreferrer" className='px-6 py-2 rounded text-gray-600 bg-white hover:bg-black hover:text-gray-100'> Github</a>
                 </div>
 
               </div>
-
 
             </div>
           </div>
@@ -51,12 +49,12 @@ export default function Projects() {
       <div className="flex-col">
         <h1 className='text-gray-800 px-3 text-2xl mt-10'>More...</h1>
         {extraProjects.map((project, idx) => (
-          <div className="bg-gray-800 rounded p-3 shadow-xl my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
+          <div className="bg-gray-800 rounded p-3 shadow-md my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
             data-sal-easing="ease" >
-            <div className="flex justify-between">
-              <h2 className='capitalize text-gray-400'>{project.name} </h2>
+            <div className="flex justify-between ">
+              <h2 className='capitalize text-gray-300'>{project.name} </h2>
 
-              <a href={project.link} target='_blank' rel="noopener noreferrer" className='px-6 py-1  rounded text-gray-100 bg-gray-900 ml-2 focus:outline-none hover:shadow-xl'> View</a>
+              <a href={project.link} target='_blank' rel="noopener noreferrer" className=' px-6 py-1 rounded text-sm text-gray-100 bg-black ml-2 focus hover:bg-white hover:text-black'> View</a>
 
             </div>
             <p className='text-gray-500 w-4/5 normal-case'>{project.description}</p>

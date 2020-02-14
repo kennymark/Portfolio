@@ -8,7 +8,7 @@ export default function Contact() {
   const imgStyle = {
     position: 'fixed',
     zIndex: -6,
-    opacity: 0.9,
+    opacity: 0.8,
     height: 149,
     top: '55%',
     transform: 'translateX(50%)'
