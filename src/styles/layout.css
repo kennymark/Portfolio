@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500|Work+Sans:400,500,700&display=swap');
 @import url(./tailwind.min.css);
-
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -29,33 +28,25 @@ body {
   font-weight: 400;
 }
 
-h1,
-h2,
-h3 {
-
+h1, h2, h3 {
   font-family: 'Work Sans', serif !important;
   font-weight: bold !important;
 }
-
-
-
 
 main {
   flex: 1;
   min-height: 76vh;
 }
 
-
 ::selection {
   background-color: #ecc94b;
-  color:#fff
+  color: #fff
 }
 
 .proj {
   min-height: 300;
   max-height: 350;
 }
-
 
 .proj:hover {
   z-index: 100;
@@ -67,7 +58,6 @@ main {
 .proj-description {
   display: none;
   transition: all .3s ease-out;
-
 }
 
 .proj:hover>.proj-description {

@@ -9,6 +9,7 @@ import { carouselSettings } from '../data/data';
 
 
 export default function Projects() {
+
   const viewProject = (project) => {
     console.log(project)
   }
