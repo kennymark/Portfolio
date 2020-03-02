@@ -46,6 +46,15 @@ export const topProjects = [
     color: 'linear-gradient(to right, #136a8a, #267871)'
   },
   {
+    name: 'flux weather',
+    status: 'in-progress',
+    description: 'A beautiful cross platform weather app built in React-Native expo.',
+    image: 'https://camo.githubusercontent.com/2545a369f71065156e739ffbdc3b7cf9238361d1/68747470733a2f2f7374617469632e6e6f74696f6e2d7374617469632e636f6d2f61643364303635642d373135392d346138302d386130362d6134353531666361663938642f53696d756c61746f725f53637265656e5f53686f745f2d5f6950686f6e655f585f2d5f323031382d30322d32375f61745f31352e32312e33352e706e67',
+    link: null,
+    github: 'https://github.com/kennymark/Flux-Weather',
+    color: 'linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)'
+  },
+  {
     name: 'angular hub',
     status: 'in-progress',
     description: 'An idea for a database for Angular libraries and components that google failed to build.',
@@ -54,15 +63,6 @@ export const topProjects = [
     github: 'https://github.com/angular-hub/client',
     color: 'linear-gradient(to right, #fd746c, #ff9068)'
   },
-  {
-    name: 'flux weather',
-    status: 'in-progress',
-    description: 'A beautiful cross platform weather app built in React-Native expo.',
-    image: 'https://camo.githubusercontent.com/2545a369f71065156e739ffbdc3b7cf9238361d1/68747470733a2f2f7374617469632e6e6f74696f6e2d7374617469632e636f6d2f61643364303635642d373135392d346138302d386130362d6134353531666361663938642f53696d756c61746f725f53637265656e5f53686f745f2d5f6950686f6e655f585f2d5f323031382d30322d32375f61745f31352e32312e33352e706e67',
-    link: null,
-    github: 'https://github.com/kennymark/Flux-Weather',
-    color: 'linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)'
-  }
 ]
 
 export const extraProjects = [

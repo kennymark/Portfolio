@@ -1,11 +1,13 @@
 import React from 'react';
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import Layout from '../components/layout';
 import SEO from "../components/seo";
 import { extraProjects, topProjects } from '../data/projects';
-import { carouselSettings } from '../data/data';
+// import { carouselSettings } from '../data/data';
+import Masonry from 'react-masonry-css'
+
 
 
 export default function Projects() {
@@ -14,11 +16,39 @@ export default function Projects() {
     console.log(project)
   }
 
+
+
   return (
     <Layout>
       <SEO title="Projects" />
-      <h1 className='text-gray-800 lg:text-left sm:text-center mx-3 text-2xl'>Top Projects</h1>
-      <Slider {...carouselSettings} data-sal='fade' data-sal-delay="100" data-sal-easing="ease" data-sal-duration='600' >
+      <h1 className='text-gray-800 lg:text-left sm:text-center mb-2 text-2xl sm:text-center '>Top Projects</h1>
+      <Masonry
+        breakpointCols={{ default: 2, 800: 1 }}
+        className="my-masonry-grid relative"
+        columnClassName="my-masonry-grid_column">
+        {topProjects.reverse().map((project, idx) => (
+          <div style={{ background: project.color }} className='rounded-lg p-5 shadow m-2 cursor-pointer relative'>
+            <h2 className='capitalize text-center text-lg mb-2 text-gray-900'>{project.name} </h2>
+
+            <img src={project.image} alt='' className='rounded' />
+
+            <div className="bg-gray-700 w-full  h-full absolute flex flex-col justify-center items-center mt-4 p-4"
+              style={{ bottom: 0, borderRadius: 'inherit', right: 0 }}>
+
+              <p className="text-gray-100 text-md mb-5 ">{project.description}</p>
+
+              <button>
+                <a href={project.link} target='_blank' rel="noopener noreferrer" className=' px-6 py-2 rounded text-gray-600 bg-white mr-2  hover:bg-black hover:text-gray-100'> View</a>
+
+                <a href={project.github} target='_blank' rel="noopener noreferrer" className='px-6 py-2 rounded text-gray-600 bg-white hover:bg-black hover:text-gray-100'> Github</a>
+              </button>
+
+            </div>
+          </div>
+
+        ))}
+      </Masonry>
+      {/* <Slider {...carouselSettings} data-sal='fade' data-sal-delay="100" data-sal-easing="ease" data-sal-duration='600' >
         {topProjects.map((project, idx) => (
 
           <div className='cursor-pointer' key={idx} onClick={() => viewProject(project)}>
@@ -44,7 +74,7 @@ export default function Projects() {
           </div>
 
         ))}
-      </Slider>
+      </Slider> */}
 
 
       <div className="flex-col">
