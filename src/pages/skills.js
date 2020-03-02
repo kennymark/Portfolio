@@ -11,19 +11,19 @@ import frontend from './../images/front-end.svg';
 
 export default function Skills() {
 
-  const skillClasses = 'flex-1 bg-gray-900 mt-4 border rounded-lg sm:w-full shadow-md m-3 px-6 pb-3'
+  const skillClasses = 'flex-1  mt-4 border rounded-lg sm:w-full shadow-md m-3 px-6 pb-3'
 
   const svgbg = {
     backgroundPosition: 'center',
-    backgroundBlendMode: 'multiply',
+    backgroundBlendMode: 'color-burn',
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
+    backgroundColor: '#1f1f1f'
   }
 
   return (
     <Layout>
       <SEO title="Skills" />
-
       <div className="flex-row lg:flex" data-sal="slide-down" data-sal-delay="200">
         <div className={skillClasses} style={{ backgroundImage: `url(${frontend})`, ...svgbg }}>
 

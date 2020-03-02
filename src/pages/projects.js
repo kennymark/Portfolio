@@ -28,18 +28,18 @@ export default function Projects() {
           <div style={{ background: project.color }} className='rounded-lg p-5 m-2 cursor-pointer relative proj hover:shadow-2xl' key={idx}>
             <h2 className='capitalize text-center text-normal mb-3 text-black font-semibold text-gray-700 '>{project.name} </h2>
 
-            <Image src={project.image} alt={project.name} className='rounded shadow-lg' />
+            <Image src={project.image} alt={project.name} className='rounded shadow-lg' style={{ opacity: .9 }} />
 
-            <div style={{ backgroundImage: project.color, backgroundColor: 'rgba(0,0,0,2)', }}
-              className="bg-gray-700 w-full h-full absolute flex flex-col justify-center items-center p-4 desc"
-              style={{ bottom: 0, borderRadius: 'inherit', right: 0 }}>
+            <div
+              className=" w-full h-full absolute flex flex-col justify-center items-center p-4 desc"
+              style={{ bottom: 0, borderRadius: 'inherit', right: 0, backgroundColor: project.color }}>
 
-              <p className="text-gray-100 text-md mb-5 w-64 ">{project.description}</p>
+              <div className="text-black text-center text-md mb-5 mx-auto leading-wide ">{project.description}</div>
 
               <button className='mt-5'>
-                <a href={project.link} target='_blank' rel="noopener noreferrer" className='px-6 py-2 rounded text-gray-600 bg-white mr-2  hover:bg-black hover:text-gray-100'> View</a>
+                <a href={project.link} target='_blank' rel="noopener noreferrer" className='px-5 py-2 rounded text-gray-600 bg-white mr-2  hover:bg-black hover:text-gray-100'> View</a>
 
-                <a href={project.github} target='_blank' rel="noopener noreferrer" className='px-6 py-2 rounded text-gray-600 bg-white hover:bg-black hover:text-gray-100'> Github</a>
+                <a href={project.github} target='_blank' rel="noopener noreferrer" className='px-5 py-2 rounded text-gray-600 bg-white hover:bg-black hover:text-gray-100'> Github</a>
               </button>
 
             </div>
@@ -79,15 +79,17 @@ export default function Projects() {
       <div className="flex-col">
         <h1 className='text-gray-800 px-3 text-2xl mt-10'>More...</h1>
         {extraProjects.map((project, idx) => (
-          <div className="bg-gray-800 rounded p-3 my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
+          <div className="bg-gray-200 rounded p-3 my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
             data-sal-easing="ease" >
-            <div className="flex justify-between ">
-              <h2 className='capitalize text-gray-200'>{project.name} </h2>
+            <div className="flex justify-between">
+              <h2 className='capitalize text-gray-600'>{project.name} </h2>
 
-              <a href={project.link} target='_blank' rel="noopener noreferrer" className='px-6 py-1 rounded text-sm text-white bg-gray-900 ml-2 focus hover:bg-white hover:text-black'> View</a>
-
+              <a href={project.link} target='_blank' rel="noopener noreferrer" 
+                className='px-4 py-1 rounded text-sm bg-white ml-2 focus hover:bg-gray-600 hover:text-white'>
+                View
+              </a>
             </div>
-            <p className='text-gray-500 w-4/5 normal-case'>{project.description}</p>
+            <p className='text-gray-600 w-4/5 normal-case'>{project.description}</p>
           </div>
         ))}
       </div>
