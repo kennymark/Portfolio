@@ -15,7 +15,7 @@ export default function Skills() {
 
   const svgbg = {
     backgroundPosition: 'center',
-    backgroundBlendMode: 'mutilply',
+    backgroundBlendMode: 'multiply',
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
   }
