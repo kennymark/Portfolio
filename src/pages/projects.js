@@ -28,7 +28,7 @@ export default function Projects() {
           <div style={{ background: project.color }} className='rounded-lg p-5 m-2 cursor-pointer relative proj hover:shadow-2xl' key={idx}>
             <h2 className='capitalize text-center text-normal mb-3 text-black font-semibold text-gray-700 '>{project.name} </h2>
 
-            <Image src={project.image} alt={project.name} className='rounded shadow-lg' crossorigin="anonymous" />
+            <Image src={project.image} alt={project.name} className='rounded shadow-lg' />
 
             <div style={{ backgroundImage: project.color, backgroundColor: 'rgba(0,0,0,2)', }}
               className="bg-gray-700 w-full h-full absolute flex flex-col justify-center items-center p-4 desc"
@@ -79,7 +79,7 @@ export default function Projects() {
       <div className="flex-col">
         <h1 className='text-gray-800 px-3 text-2xl mt-10'>More...</h1>
         {extraProjects.map((project, idx) => (
-          <div  className="bg-gray-800 rounded p-3 my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
+          <div className="bg-gray-800 rounded p-3 my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
             data-sal-easing="ease" >
             <div className="flex justify-between ">
               <h2 className='capitalize text-gray-200'>{project.name} </h2>
