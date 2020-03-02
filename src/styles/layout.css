@@ -38,42 +38,21 @@ main {
   min-height: 76vh;
 }
 
+.proj {
+  transition: all .3s ease-in;
+}
+
+.proj .desc {
+  display: none;
+}
+
+.proj:hover .desc {
+  display: flex;
+}
+
 ::selection {
   background-color: #ecc94b;
   color: #fff
-}
-
-.proj {
-  min-height: 300;
-  max-height: 350;
-}
-
-.proj:hover {
-  z-index: 100;
-  position: absolute;
-  top: -275px;
-  visibility: hidden;
-}
-
-.proj-description {
-  display: none;
-  transition: all .3s ease-out;
-}
-
-.proj:hover>.proj-description {
-  visibility: visible;
-  display: flex;
-  position: absolute;
-  height: 285px;
-  max-width: 360px;
-  left: -15px;
-}
-
-.img-container {
-  height: inherit;
-  position: absolute;
-  background: #000;
-  z-index: 11;
 }
 
 .my-masonry-grid {
@@ -82,7 +61,7 @@ main {
   display: -ms-flexbox;
   /* Not needed if autoprefixing */
   display: flex;
-  margin-left: -25px;
+  margin-left: -30px;
   /* gutter size offset */
   width: auto;
 }
