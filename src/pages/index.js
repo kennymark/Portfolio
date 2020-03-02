@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { topProjects } from '../data/projects';
 import { Link } from "gatsby";
-
+import Img from 'react-image'
 const IndexPage = () => {
   const settings = {
     infinite: true,
@@ -40,8 +40,7 @@ const IndexPage = () => {
             <Slider {...settings}>
               {topProjects.map((project, key) => (
                 <div className='w-11/12' key={key}>
-                  <img src={project.image} alt='' className='object-contain  w-full ' style={{ height: 350 }} />
-
+                  <Img src={project.image} alt='' className='object-contain w-full rounded ' style={{ height: 350 }} />
                   <p className='flex-1 text-center mt-3 bg-yellow-500 w-25 m-5 p-2 capitalize '>
                     {project.name}
                   </p>
