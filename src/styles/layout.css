@@ -39,7 +39,7 @@ main {
 }
 
 .proj {
-  transition: all .3s ease-in;
+  transition: all .2s ease-in;
 }
 
 .proj .desc {

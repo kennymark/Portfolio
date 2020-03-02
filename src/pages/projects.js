@@ -1,13 +1,11 @@
 import React from 'react';
-// import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import Layout from '../components/layout';
 import SEO from "../components/seo";
 import { extraProjects, topProjects } from '../data/projects';
-// import { carouselSettings } from '../data/data';
 import Masonry from 'react-masonry-css'
-
+import Image from 'react-image'
 
 
 export default function Projects() {
@@ -23,17 +21,17 @@ export default function Projects() {
       <SEO title="Projects" />
       <h1 className='text-gray-800 lg:text-left sm:text-center mb-2 text-2xl sm:text-center ml-1'>Top Projects</h1>
       <Masonry
-        breakpointCols={{ default: 3, 800: 1 }}
+        breakpointCols={{ default: 3, 800: 2, 600: 1 }}
         className="my-masonry-grid relative"
         columnClassName="my-masonry-grid_column">
         {topProjects.reverse().map((project, idx) => (
-          <div style={{ background: project.color }} className='rounded-lg p-5 shadow m-2 cursor-pointer relative proj'>
+          <div style={{ background: project.color }} className='rounded-lg p-5 m-2 cursor-pointer relative proj hover:shadow-2xl' key={idx}>
             <h2 className='capitalize text-center text-normal mb-3 text-black font-semibold text-gray-700 '>{project.name} </h2>
 
-            <img src={project.image} alt={project.name} className='rounded shadow-lg' />
+            <Image src={project.image} alt={project.name} className='rounded shadow-lg' crossorigin="anonymous" />
 
-            <div style={{ backgroundImage: project.color, backgroundColor: 'rgba(0,0,0,2)', backgroundBlendMode: 'color' }}
-              className=" bg-gray-700 w-full h-full absolute flex flex-col justify-center items-center p-4 desc"
+            <div style={{ backgroundImage: project.color, backgroundColor: 'rgba(0,0,0,2)', }}
+              className="bg-gray-700 w-full h-full absolute flex flex-col justify-center items-center p-4 desc"
               style={{ bottom: 0, borderRadius: 'inherit', right: 0 }}>
 
               <p className="text-gray-100 text-md mb-5 w-64 ">{project.description}</p>
@@ -81,7 +79,7 @@ export default function Projects() {
       <div className="flex-col">
         <h1 className='text-gray-800 px-3 text-2xl mt-10'>More...</h1>
         {extraProjects.map((project, idx) => (
-          <div className="bg-gray-800 rounded p-3 shadow-md my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
+          <div  className="bg-gray-800 rounded p-3 my-4 mx-3" key={idx} data-sal="slide-down" data-sal-delay="200"
             data-sal-easing="ease" >
             <div className="flex justify-between ">
               <h2 className='capitalize text-gray-200'>{project.name} </h2>

@@ -63,6 +63,16 @@ export const topProjects = [
     github: 'https://github.com/angular-hub/client',
     color: '#bae8e8'
   },
+
+  {
+    name: 'clever advisor',
+    status: 'in-progress',
+    description: 'An application I built for an interview process ',
+    image: 'https://gitlab.com/kennymark/clever-advisor/-/raw/master/screenshots/home.png',
+    link: 'https://clever-advisor.netlify.com/',
+    github: 'https://gitlab.com/kennymark/clever-advisor',
+    color: '#90b4ce'
+  },
 ]
 
 export const extraProjects = [
