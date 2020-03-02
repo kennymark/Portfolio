@@ -30,7 +30,7 @@ export default function Projects() {
           <div style={{ background: project.color }} className='rounded-lg p-5 shadow m-2 cursor-pointer relative proj'>
             <h2 className='capitalize text-center text-normal mb-3 text-black font-semibold text-gray-700 '>{project.name} </h2>
 
-            <img src={project.image} alt='' className='rounded-md shadow-lg' />
+            <img src={project.image} alt={project.name} className='rounded shadow-lg' />
 
             <div style={{ backgroundImage: project.color, backgroundColor: 'rgba(0,0,0,2)', backgroundBlendMode: 'color' }}
               className=" bg-gray-700 w-full h-full absolute flex flex-col justify-center items-center p-4 desc"

@@ -43,7 +43,7 @@ export const topProjects = [
     image: 'https://raw.githubusercontent.com/kennymark/petitions-dashboard/master/petitions.png',
     link: 'https://petitionsdashboard.netlify.com/',
     github: 'https://github.com/kennymark/petitions-dashboard',
-    color: '#fef6e4'
+    color: '#ffedc5'
   },
   {
     name: 'flux weather',
