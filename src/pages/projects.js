@@ -8,12 +8,6 @@ import Img from 'react-image'
 
 export default function Projects() {
 
-  const viewProject = (project) => {
-    console.log(project)
-  }
-
-
-
   return (
     <Layout>
       <SEO title="Projects" />
