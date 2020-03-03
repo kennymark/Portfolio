@@ -12,7 +12,7 @@ var plugins = [{
       options: {"plugins":[],"trackingId":"UA-68267074-2","head":true},
     },{
       plugin: require('/Users/kennymark/Desktop/Projects/React-apps/portfolio/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
-      options: {"plugins":[],"fonts":[{"family":"Rubik","variants":["400","500","700"]},{"family":"Work Sans","variants":["500","700"]}]},
+      options: {"plugins":[],"fonts":[{"family":"Rubik","variants":["400","500"]},{"family":"Work Sans","variants":["700"]}]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

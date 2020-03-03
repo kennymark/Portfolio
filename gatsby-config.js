@@ -38,8 +38,8 @@ module.exports = {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
-          { family: `Rubik`, variants: [`400`, `500`, `700`] },
-          { family: `Work Sans`, variants: [`500`, `700`], },
+          { family: `Rubik`, variants: [`400`, `500`,] },
+          { family: `Work Sans`, variants: [`700`], },
         ],
       },
     }
