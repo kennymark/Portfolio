@@ -3,7 +3,7 @@ export const topProjects = [
   {
     name: 'Fullstack e-commerce Store',
     status: 'live',
-    description: 'A full stack application built with Node, Firebase, VueJs and Stripe for payments ',
+    description: 'A full stack application built with Node, Firebase, VueJs and Stripe for payments. ',
     image: 'https://raw.githubusercontent.com/kennymark/compra-bueno/master/screenshots/adminpage.png',
     link: 'https://comprabueno.netlify.com/',
     github: 'https://github.com/kennymark/compra-bueno',
@@ -67,7 +67,7 @@ export const topProjects = [
   {
     name: 'clever advisor',
     status: 'in-progress',
-    description: 'An application I built for an interview process ',
+    description: 'An application I built for an interview process. ',
     image: 'https://gitlab.com/kennymark/clever-advisor/-/raw/master/screenshots/home.png',
     link: 'https://clever-advisor.netlify.com/',
     github: 'https://gitlab.com/kennymark/clever-advisor',

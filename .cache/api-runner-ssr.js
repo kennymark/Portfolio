@@ -6,10 +6,13 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/kennymark/Desktop/Projects/React-apps/portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Kenny Mark Portfolio","short_name":"Kenny Mark","start_url":"/","background_color":"#ecc94b","theme_color":"#f6e05e","display":"minimal-ui","icon":"src/images/favicon.png"},
+      options: {"plugins":[],"name":"Kenny Mark Portfolio","short_name":"Kenny Mark","start_url":"/","background_color":"#feedc9","theme_color":"#ffedc5","display":"minimal-ui","icon":"src/images/favicon.png"},
     },{
       plugin: require('/Users/kennymark/Desktop/Projects/React-apps/portfolio/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"UA-68267074-2","head":true},
+    },{
+      plugin: require('/Users/kennymark/Desktop/Projects/React-apps/portfolio/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
+      options: {"plugins":[],"fonts":[{"family":"Rubik","variants":["400","500","700"]},{"family":"Work Sans","variants":["500","700"]}]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

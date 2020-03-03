@@ -7,6 +7,9 @@ import Slider from "react-slick";
 import { topProjects } from '../data/projects';
 import { Link } from "gatsby";
 import Img from 'react-image'
+
+
+
 const IndexPage = () => {
   const settings = {
     infinite: true,

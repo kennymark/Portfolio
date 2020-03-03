@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,500|Work+Sans:400,500,700&display=swap');
-@import url(./tailwind.min.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -14,18 +15,13 @@ body {
   font-family: 'Rubik', sans-serif;
   height: 100%;
   color: hsla(0, 0%, 0%, 0.8);
-  /* background                   : #f2f4f8 !important; */
-  font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-  display: flex;
-  flex-direction: column;
   overflow-x: hidden;
-  font-weight: 400;
 }
 
 h1, h2, h3 {
@@ -51,8 +47,8 @@ main {
 }
 
 ::selection {
-  background-color: #ecc94b;
-  color: #fff
+  background-color: #ffedc5;
+  color: black;
 }
 
 .my-masonry-grid {
@@ -68,13 +64,19 @@ main {
 
 .my-masonry-grid_column {
   padding-left: 25px;
-  /* gutter size */
   background-clip: padding-box;
 }
 
-/* Style your items */
 
 .my-masonry-grid_column>div {
   /* change div to reference your elements you put in <Masonry> */
   margin-bottom: 25px;
+}
+
+.proj-btn {
+  @apply px-4 py-2 rounded bg-black text-gray-100
+}
+
+.proj-btn:hover {
+  @apply shadow-2xl bg-white text-gray-800
 }

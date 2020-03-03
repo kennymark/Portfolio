@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from "../components/seo"
 import email from '../images/email.svg'
-
+import Img from 'react-image'
 
 export default function Contact() {
   const imgStyle = {
@@ -18,7 +18,7 @@ export default function Contact() {
   return (
     <Layout>
       <SEO title="Contact" />
-      <img src={email} style={imgStyle} className='' alt='front end ' height='50' />
+      <Img src={email} style={imgStyle} className='' alt='front end ' height='50' />
       <div className="p-3" data-sal='fade' data-sal-duration='400' style={{ zIndex: 21 }}>
 
         <form action="https://getform.io/f/c4f252bb-d674-4113-9ff6s-1a280733fed3" method="post" className="flex-row "
@@ -62,10 +62,6 @@ export default function Contact() {
 
         </form>
       </div>
-
-
-
-
 
     </Layout>
 

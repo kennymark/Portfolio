@@ -1,11 +1,9 @@
 import React from 'react';
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
 import Layout from '../components/layout';
 import SEO from "../components/seo";
 import { extraProjects, topProjects } from '../data/projects';
 import Masonry from 'react-masonry-css'
-import Image from 'react-image'
+import Img from 'react-image'
 
 
 export default function Projects() {
@@ -28,7 +26,7 @@ export default function Projects() {
           <div style={{ background: project.color }} className='rounded-lg p-5 m-2 cursor-pointer relative proj hover:shadow-2xl' key={idx}>
             <h2 className='capitalize text-center text-normal mb-3 text-black font-semibold text-gray-700 '>{project.name} </h2>
 
-            <Image src={project.image} alt={project.name} className='rounded shadow-lg' style={{ opacity: .9 }} />
+            <Img src={project.image} alt={project.name} className='rounded shadow-lg' />
 
             <div
               className=" w-full h-full absolute flex flex-col justify-center items-center p-4 desc"
@@ -36,10 +34,10 @@ export default function Projects() {
 
               <div className="text-black text-center text-md mb-5 mx-auto leading-wide ">{project.description}</div>
 
-              <button className='mt-5'>
-                <a href={project.link} target='_blank' rel="noopener noreferrer" className='px-5 py-2 rounded text-gray-600 bg-white mr-2  hover:bg-black hover:text-gray-100'> View</a>
+              <button className='mt-5 text-sm'>
+                <a href={project.link} target='_blank' rel="noopener noreferrer" className='mr-3 proj-btn'> View</a>
 
-                <a href={project.github} target='_blank' rel="noopener noreferrer" className='px-5 py-2 rounded text-gray-600 bg-white hover:bg-black hover:text-gray-100'> Github</a>
+                <a href={project.github} target='_blank' rel="noopener noreferrer" className='proj-btn'> Github</a>
               </button>
 
             </div>
@@ -47,33 +45,6 @@ export default function Projects() {
 
         ))}
       </Masonry>
-      {/* <Slider {...carouselSettings} data-sal='fade' data-sal-delay="100" data-sal-easing="ease" data-sal-duration='600' >
-        {topProjects.map((project, idx) => (
-
-          <div className='cursor-pointer' key={idx} onClick={() => viewProject(project)}>
-            <div className='flex-col content-between m-3 rounded-lg shadow p-3 h-full proj '
-              style={{ background: project.color }} >
-              <h2 className='flex justify-center capitalize text-white'>{project.name} </h2>
-              <img src={project.image} alt='' className='object-contain h-48 w-full opacity-75' />
-
-
-              <div className='flex-col items-center  m-3 rounded-lg p-10 proj-description'
-                style={{ backgroundImage: project.color, backgroundColor: 'rgba(0,0,0,.5)', backgroundBlendMode: 'color' }} >
-                <p className="text-gray-100 text-md ">{project.description}</p>
-
-                <div className="buttons mt-10">
-                  <a href={project.link} target='_blank' rel="noopener noreferrer" className=' px-6 py-2 rounded text-gray-600 bg-white mr-2  hover:bg-black hover:text-gray-100'> View</a>
-
-                  <a href={project.github} target='_blank' rel="noopener noreferrer" className='px-6 py-2 rounded text-gray-600 bg-white hover:bg-black hover:text-gray-100'> Github</a>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-
-        ))}
-      </Slider> */}
 
 
       <div className="flex-col">
@@ -84,7 +55,7 @@ export default function Projects() {
             <div className="flex justify-between">
               <h2 className='capitalize text-gray-600'>{project.name} </h2>
 
-              <a href={project.link} target='_blank' rel="noopener noreferrer" 
+              <a href={project.link} target='_blank' rel="noopener noreferrer"
                 className='px-4 py-1 rounded text-sm bg-white ml-2 focus hover:bg-gray-600 hover:text-white'>
                 View
               </a>

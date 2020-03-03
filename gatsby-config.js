@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,8 +24,8 @@ module.exports = {
         name: `Kenny Mark Portfolio`,
         short_name: `Kenny Mark`,
         start_url: `/`,
-        background_color: `#ecc94b`,
-        theme_color: `#f6e05e`,
+        background_color: `#feedc9`,
+        theme_color: `#ffedc5`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
@@ -33,5 +34,14 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: { trackingId: "UA-68267074-2", head: true, },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          { family: `Rubik`, variants: [`400`, `500`, `700`] },
+          { family: `Work Sans`, variants: [`500`, `700`], },
+        ],
+      },
+    }
   ],
 }
