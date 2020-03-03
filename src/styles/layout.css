@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -67,7 +66,6 @@ main {
   background-clip: padding-box;
 }
 
-
 .my-masonry-grid_column>div {
   /* change div to reference your elements you put in <Masonry> */
   margin-bottom: 25px;
@@ -80,3 +78,17 @@ main {
 .proj-btn:hover {
   @apply shadow-2xl bg-white text-gray-800
 }
+
+.input {
+  @apply outline-none bg-gray-200 border border-gray-200 p-3 w-64 w-full rounded
+}
+
+.input:focus {
+  @apply bg-white border border-gray-300
+}
+
+.input::placeholder {
+  @apply text-gray-500
+}
+
+@tailwind utilities;

@@ -18,7 +18,7 @@ export default function Skills() {
     backgroundBlendMode: 'color-burn',
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
-    backgroundColor: '#0c1017'
+    backgroundColor: '#111721'
   }
 
   return (
