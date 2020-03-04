@@ -41,10 +41,10 @@ const Layout = ({ children }) => {
           {children}
         </main>
       </div>
-      <footer className=' border-t w-full  mt-3 h-20 flex justify-center absolute'>
-        <div className="self-center text-center">
-          Built with <span role='img' aria-label="love">❤️ </span> by Kenny Mark  ©{year}
-          <a href={data.allFile.edges[0].node.publicURL} target='_blank' className=" ml-3 rounded shadow-sm bg-yellow-300 p-2 text-gray-700 hover:shadow-xl hover:text-black" rel="noopener noreferrer">View CV</a>
+      <footer className=' border-t w-full mt-3 h-20 flex justify-center absolute '>
+        <div className="self-center text-center ">
+          <span>Built with <span role='img' aria-label="love">❤️ </span> by Kenny Mark  ©{year}</span>
+          <a href={data.allFile.edges[0].node.publicURL} target='_blank' className=" ml-3 rounded shadow-sm bg-yellow-300 p-2 text-gray-700 hover:shadow-xl hover:text-black text-sm" rel="noopener noreferrer">View CV</a>
         </div>
 
       </footer>

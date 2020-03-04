@@ -22,11 +22,12 @@ const IndexPage = () => {
     arrows: false,
     dots: true
   };
+
   return (
     <Layout>
       <SEO title="Home" />
       <div className="flex-row  lg:flex p-3">
-        <div className=" flex-1 self-center" data-sal='slide-right' data-sal-duration='500'>
+        <div className=" flex-1 self-center" data-sal='slide-right' data-sal-duration='300'>
           <h1 className='text-6xl leading-none text-gray-800 my-6 leading-6 '>
             Hi there... <br /> I build on the web</h1>
           <p className='text-lg text-gray-600'> JavaScript front-end & back-end developer</p>
@@ -37,7 +38,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div data-sal='slide-left' data-sal-duration='400' className='flex flex-1 justify-center mt-5 bg-yellow-400 rounded-lg  w-full shadow-xl' style={{ minHeight: 550 }}>
+        <div data-sal='slide-left' data-sal-duration='300' className='flex flex-1 justify-center mt-5 bg-yellow-400 rounded-lg  w-full shadow-xl' style={{ minHeight: 550 }}>
 
           <div className='flex-col self-center mt-5 bg-gray-200 rounded-lg shadow-2xl ' style={{ minHeight: 400, width: '80%', maxWidth: 500 }}>
             <Slider {...settings}>

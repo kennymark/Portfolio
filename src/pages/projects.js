@@ -17,10 +17,10 @@ export default function Projects() {
         className="my-masonry-grid relative"
         columnClassName="my-masonry-grid_column">
         {topProjects.reverse().map((project, idx) => (
-          <div style={{ background: project.color }} className='rounded-lg p-5 m-2 cursor-pointer relative proj hover:shadow-2xl' key={idx}>
+          <div style={{ background: project.color }} className='rounded-lg p-5 m-2 cursor-pointer relative proj hover:shadow-2xl transition duration-200 ease-out' key={idx}>
             <h2 className='capitalize text-center text-normal mb-3 text-black font-semibold text-gray-700 '>{project.name} </h2>
 
-            <Img src={project.image} alt={project.name} className='rounded shadow-lg' />
+            <Img src={project.image} alt={project.name} className='rounded shadow-lg ' />
 
             <div
               className=" w-full h-full absolute flex flex-col justify-center items-center p-4 desc"

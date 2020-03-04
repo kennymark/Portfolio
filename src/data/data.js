@@ -9,17 +9,20 @@ export const pages = [
 
 export const skillTypes = {
     frontend: [
-        "HTML", "CSS/SASS", "CSS Frameworks", "React, Angular, Vue", "JQuery,JavaScript/ES6+", "Responsive Design", "Typescript",
-    ],
+        "HTML, CSS/SASS, JS", "CSS Frameworks", "React, Angular, Vue", "Responsive Design", "Typescript",
+    ].sort(),
+
     backend: [
-        "Backend MVC with NodeJS", "Express", "Authentication / Authorization",
-        "Templating with hbs, ejs", "RESTFUL API Design/Dev", "GraphQL Server",
-        "NPM, Nodejs, Gulp etc."
-    ],
-    databases: ["MsSQL", "MySQL", "MongoDB", "Data modelling", "Normalization"],
-    devops: ["AWS EC2/S3", "Google  Cloud", "Git", "APIs", "CI/CD", "Testing (Unit, Integration)"],
-    extras: ["App design with Adobe XD", "App dev with React Native",
-        "Project management with Jira, Confluence, Git etc.", "Cross-browser dev/testing", "Agile (SCRUM)",
-    ]
+        "MVC Paradigm", "Restful/ Graphql API's", "Auth with sessions/jwt",
+        "Templating with hbs, ejs",
+        "NPM, Nodejs, Gulp"
+    ].sort(),
+    databases: ["Sql databases", "MySQL", "MongoDB", "Data modelling", "Normalization"],
+
+    devops: ["AWS EC2/S3", "Google  Cloud", "Git", "APIs", "CI/CD", "Testing (Unit, Integration)"].sort(),
+
+    extras: ["UI design with Adobe XD", "App dev with React Native",
+        "Familiarity with project managment tools.", "Cross-browser dev/testing", "Agile (SCRUM)", "Flexibility and adaptability"
+    ].sort()
 
 }
