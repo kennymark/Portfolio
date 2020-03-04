@@ -19,10 +19,10 @@ export const skillTypes = {
     ].sort(),
     databases: ["Sql databases", "MySQL", "MongoDB", "Data modelling", "Normalization"],
 
-    devops: ["AWS EC2/S3", "Google  Cloud", "Git", "APIs", "CI/CD", "Testing (Unit, Integration)"].sort(),
+    devops: ["AWS, Google Cloud & Firebase", "Microservices", "Continous Development", "Continuous Delivery", "Testing (Unit, Integration)"].sort(),
 
     extras: ["UI design with Adobe XD", "App dev with React Native",
-        "Familiarity with project managment tools.", "Cross-browser dev/testing", "Agile (SCRUM)", "Flexibility and adaptability"
+        "Familiarity with project managment tools.", "Cross-browser dev/testing", "Agile (SCRUM)",
     ].sort()
 
 }

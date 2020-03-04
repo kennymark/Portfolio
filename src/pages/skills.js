@@ -28,21 +28,21 @@ export default function Skills() {
         <div className={skillClasses} style={{ backgroundImage: `url(${frontend})`, ...svgbg }}>
 
           <h1 className="text-2xl text-center text-gray-400 mt-3">Front-end</h1>
-          <ul className="self-center mx-auto text-gray-500 p-6" >
+          <ul className="self-center mx-auto text-gray-500 p-8" >
             {skillTypes.frontend.map((skill, i) => <li key={i} className='my-1 text-lg'> {skill}</li>)}
           </ul>
         </div>
 
         <div className={skillClasses} style={{ backgroundImage: `url(${back})`, ...svgbg }} >
           <h1 className=" text-2xl text-center text-gray-400 mt-3">Back-end</h1>
-          <ul className="justify-center  mx-auto text-gray-500 p-6">
+          <ul className="justify-center  mx-auto text-gray-500 p-8">
             {skillTypes.backend.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
           </ul>
         </div>
 
         <div className={skillClasses} style={{ backgroundImage: `url(${db})`, ...svgbg }} >
           <h1 className="text-2xl text-center text-gray-400 mt-3">Database</h1>
-          <ul className="self-center w-3/4 mx-auto text-gray-500 p-6">
+          <ul className="self-center w-3/4 mx-auto text-gray-500 p-8">
             {skillTypes.databases.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
           </ul>
         </div>
@@ -53,14 +53,14 @@ export default function Skills() {
         <div className={skillClasses} style={{ backgroundImage: `url(${devop})`, ...svgbg }}>
 
           <h1 className='text-2xl text-center text-gray-400 mt-3'>Devops</h1>
-          <ul className="self-center mx-auto  text-gray-500 p-6" >
+          <ul className="self-center mx-auto  text-gray-500 p-8" >
             {skillTypes.devops.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
           </ul>
         </div>
 
         <div className={skillClasses} style={{ backgroundImage: `url(${extras})`, ...svgbg }}>
           <h1 className='text-2xl text-center text-gray-400 mt-3'>Extras</h1>
-          <ul className="self-center mx-auto text-gray-500 p-6" >
+          <ul className="self-center mx-auto text-gray-500 p-8" >
             {skillTypes.extras.map((skill, i) => <li key={i} className='my-1 text-lg'>{skill}</li>)}
           </ul>
         </div>
