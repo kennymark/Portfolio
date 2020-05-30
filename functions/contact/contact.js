@@ -3,7 +3,7 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.EMAIL_API_KEY);
 
 exports.handler = async (event, context) => {
-  const { email, subject, message } = event.body
+  const { email, subject, message } = JSON.parse(event.body)
   const msg = {
     to: 'geniounico@outlook.com',
     from: email,
@@ -12,7 +12,7 @@ exports.handler = async (event, context) => {
   };
 
   try {
-    console.log({ event })
+    console.log({ event: event.body, context })
     await sgMail.send(msg);
     return {
       statusCode: 200,

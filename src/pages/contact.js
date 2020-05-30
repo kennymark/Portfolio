@@ -28,8 +28,6 @@ export default function Contact({ props }) {
         "body": JSON.stringify(data)
       })
       setResult(true)
-      console.log({ data })
-
       setTimeout(() => navigate('/'), 2000);
 
       setMessage('Email has been sucessfully sent. Redirecting...')
@@ -43,7 +41,7 @@ export default function Contact({ props }) {
   const triggerErrors = () => {
     setType('error')
     setResult(true)
-    setMessage(`Email hasn't been sent`)
+    setMessage(`Email hasn't been sent. Please try again`)
   }
 
   return (
