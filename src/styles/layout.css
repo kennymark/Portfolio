@@ -94,4 +94,8 @@ main {
   @apply text-gray-500
 }
 
+.body-main {
+  min-height: calc(100vh - 11rem);
+}
+
 @tailwind utilities;

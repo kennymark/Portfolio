@@ -15,7 +15,7 @@ export default function Profiles() {
           </p>
           <p className=' mt-2'>
             I actively spend many hours per day working on my side projects which can be found on
-          <span className='bg-yellow-200 px-1 text-gray-700 hover:bg-yellow-300 '>
+          <span className='bg-yellow-200 mx-1 p-1 text-gray-700 hover:bg-yellow-300 dark:bg-gray-500 rounded '>
               <a href="https://github.com/kennymark" target="_blank" rel="noopener noreferrer" >github</a>
             </span>. Software development aside, I am also heavily invested in the creation and nurturing of ideas that are used by the masses. I incline to be entrepreneurial at times and product design would be an area I would love to explore and competent at. I see beyond code and design.
           </p>

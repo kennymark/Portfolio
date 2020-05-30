@@ -4,7 +4,7 @@ exports.topProjects = [
     name: 'Fullstack e-commerce Store',
     status: 'live',
     description: 'A full stack application built with Node, Firebase, VueJs and Stripe for payments. ',
-    image: 'https://gitlab.com/kennymark/nuxt-mercado/-/raw/master/screenshots/products.jpg',
+    image: 'https://gitlab.com/kennymark/nuxt-mercado/-/raw/master/screenshots/products.png',
     link: 'https://nuxt-mercado.netlify.app/',
     source: 'https://gitlab.com/kennymark/nuxt-mercado',
     color: '#e2daeb'
@@ -76,14 +76,14 @@ exports.topProjects = [
 ]
 
 exports.extraProjects = [
-  {
-    name: 'car info extractor',
-    status: 'live',
-    description: 'Get valuable info from a car before purchase (uk only).',
-    image: 'https://raw.githubusercontent.com/kennymark/uk-car-search/master/img.png',
-    link: 'https://github.com/kennymark/uk-car-search',
-    github: 'https://github.com/kennymark/uk-car-search'
-  },
+  // {
+  //   name: 'car info extractor',
+  //   status: 'live',
+  //   description: 'Get valuable info from a car before purchase (uk only).',
+  //   image: 'https://raw.githubusercontent.com/kennymark/uk-car-search/master/img.png',
+  //   link: 'https://github.com/kennymark/uk-car-search',
+  //   github: 'https://github.com/kennymark/uk-car-search'
+  // },
   {
     name: 'oz studios',
     description: 'Oz Studios is a fictional web design agency website built to showcase my skills as a front-end developer or web designer.',
