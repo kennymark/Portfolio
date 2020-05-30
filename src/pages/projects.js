@@ -3,8 +3,9 @@ import Layout from '../components/layout';
 import SEO from "../components/seo";
 import { extraProjects, topProjects } from '../data/projects';
 import Masonry from 'react-masonry-css'
-import Img from 'react-image'
-
+import { Img } from 'react-image'
+import slug from 'slug'
+import { Link } from "gatsby"
 
 export default function Projects() {
 
@@ -18,23 +19,25 @@ export default function Projects() {
         columnClassName="my-masonry-grid_column">
         {topProjects.reverse().map((project, idx) => (
           <div style={{ background: project.color }} className='rounded-lg p-5 m-2 cursor-pointer relative proj hover:shadow-2xl transition duration-200 ease-out' key={idx}>
-            <h2 className='capitalize text-center text-normal mb-3 text-black font-semibold text-gray-700 '>{project.name} </h2>
 
+            <h2 className='capitalize text-center text-normal mb-3 text-black font-semibold text-gray-700 '>{project.name} </h2>
             <Img src={project.image} alt={project.name} className='rounded shadow-lg ' />
 
-            <div
-              className=" w-full h-full absolute flex flex-col justify-center items-center p-4 desc"
-              style={{ bottom: 0, borderRadius: 'inherit', right: 0, backgroundColor: project.color }}>
+            <Link to={`project/${slug(project.name)}`} className='rounded-lg'>
+              <div
+                className=" w-full h-full absolute flex flex-col justify-center items-center p-4 desc"
+                style={{ bottom: 0, borderRadius: 'inherit', right: 0, backgroundColor: project.color }}>
 
-              <div className="text-black text-center text-md mb-5 mx-auto leading-wide ">{project.description}</div>
+                <div className="text-black text-center text-md mb-5 mx-auto leading-wide ">{project.description}</div>
 
-              <button className='mt-5 text-sm'>
-                <a href={project.link} target='_blank' rel="noopener noreferrer" className='mr-3 proj-btn'> View</a>
+                <button className='mt-5 text-sm'>
+                  <a href={project.link} target='_blank' rel="noopener noreferrer" className='mr-3 proj-btn'>Demo</a>
+                  <a href={project.source} target='_blank' rel="noopener noreferrer" className='proj-btn'> Github</a>
+                </button>
 
-                <a href={project.github} target='_blank' rel="noopener noreferrer" className='proj-btn'> Github</a>
-              </button>
+              </div>
+            </Link>
 
-            </div>
           </div>
 
         ))}

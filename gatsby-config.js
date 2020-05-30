@@ -1,3 +1,6 @@
+const tailwindConfig = require("./tailwind.config.js");
+
+
 module.exports = {
   siteMetadata: {
     title: `Full Stack Web Developer`,
@@ -10,7 +13,6 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -42,6 +44,18 @@ module.exports = {
           { family: `Work Sans`, variants: [`700`], },
         ],
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require(`tailwindcss`)(tailwindConfig),
+          require(`autoprefixer`),
+          ...(process.env.NODE_ENV === `production`
+            ? [require(`cssnano`)]
+            : []),
+        ],
+      },
+    },
   ],
 }

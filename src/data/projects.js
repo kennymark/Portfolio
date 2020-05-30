@@ -1,12 +1,12 @@
 
-export const topProjects = [
+exports.topProjects = [
   {
     name: 'Fullstack e-commerce Store',
     status: 'live',
     description: 'A full stack application built with Node, Firebase, VueJs and Stripe for payments. ',
-    image: 'https://raw.githubusercontent.com/kennymark/compra-bueno/master/screenshots/adminpage.png',
-    link: 'https://comprabueno.netlify.com/',
-    github: 'https://github.com/kennymark/compra-bueno',
+    image: 'https://gitlab.com/kennymark/nuxt-mercado/-/raw/master/screenshots/products.jpg',
+    link: 'https://nuxt-mercado.netlify.app/',
+    source: 'https://gitlab.com/kennymark/nuxt-mercado',
     color: '#e2daeb'
   },
   {
@@ -15,7 +15,7 @@ export const topProjects = [
     description: 'Express based app with email + social auth, password recovery, email etc.',
     image: 'https://raw.githubusercontent.com/kennymark/express-starter/master/screenshots/account.png',
     link: 'https://express-kenny.herokuapp.com/',
-    github: 'https://github.com/kennymark/express-starter',
+    source: 'https://github.com/kennymark/express-starter',
     color: '#f3d2c1'
   },
   {
@@ -24,7 +24,7 @@ export const topProjects = [
     description: 'A simple note taking application built with React and Firebase Auth and Firestore.',
     image: 'https://raw.githubusercontent.com/kennymark/Good-Notes/master/screenshots/main-page.png',
     link: 'https://goodnotes.netlify.com/',
-    github: 'https://github.com/kennymark/Good-Notes',
+    source: 'https://github.com/kennymark/Good-Notes',
     color: '#fec7d7'
   },
   {
@@ -33,7 +33,7 @@ export const topProjects = [
     description: 'A simple airbnb clone without the backend logic.',
     image: 'https://raw.githubusercontent.com/kennymark/airbnb-clone-v2/master/screenshot/screenshot.jpg',
     link: 'https://react-airbnb.netlify.com/',
-    github: 'https://github.com/kennymark/airbnb-clone-v2',
+    source: 'https://github.com/kennymark/airbnb-clone-v2',
     color: '#faeee7'
   },
   {
@@ -42,7 +42,7 @@ export const topProjects = [
     description: 'An SPA that extracts valuable insight into UK parliamentary petition data with just a simple url.',
     image: 'https://raw.githubusercontent.com/kennymark/petitions-dashboard/master/petitions.png',
     link: 'https://petitionsdashboard.netlify.com/',
-    github: 'https://github.com/kennymark/petitions-dashboard',
+    source: 'https://github.com/kennymark/petitions-dashboard',
     color: '#ffedc5'
   },
   {
@@ -51,7 +51,7 @@ export const topProjects = [
     description: 'A beautiful cross platform weather app built in React-Native expo.',
     image: 'https://camo.githubusercontent.com/2545a369f71065156e739ffbdc3b7cf9238361d1/68747470733a2f2f7374617469632e6e6f74696f6e2d7374617469632e636f6d2f61643364303635642d373135392d346138302d386130362d6134353531666361663938642f53696d756c61746f725f53637265656e5f53686f745f2d5f6950686f6e655f585f2d5f323031382d30322d32375f61745f31352e32312e33352e706e67',
     link: null,
-    github: 'https://github.com/kennymark/Flux-Weather',
+    source: 'https://github.com/kennymark/Flux-Weather',
     color: '#ffc6c7'
   },
   {
@@ -60,7 +60,7 @@ export const topProjects = [
     description: 'An idea for a database for Angular libraries and components that google failed to build.',
     image: 'https://raw.githubusercontent.com/angular-hub/client/master/screenshot/home.jpg',
     link: 'https://angularhub.netlify.com/',
-    github: 'https://github.com/angular-hub/client',
+    source: 'https://github.com/angular-hub/client',
     color: '#bae8e8'
   },
 
@@ -70,12 +70,12 @@ export const topProjects = [
     description: 'An application I built for an interview process. ',
     image: 'https://gitlab.com/kennymark/clever-advisor/-/raw/master/screenshots/home.png',
     link: 'https://clever-advisor.netlify.com/',
-    github: 'https://gitlab.com/kennymark/clever-advisor',
+    source: 'https://gitlab.com/kennymark/clever-advisor',
     color: '#90b4ce'
   },
 ]
 
-export const extraProjects = [
+exports.extraProjects = [
   {
     name: 'car info extractor',
     status: 'live',

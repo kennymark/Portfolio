@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from "../components/seo"
 import email from '../images/email.svg'
-import Img from 'react-image'
+import { Img } from 'react-image'
 
 export default function Contact() {
 

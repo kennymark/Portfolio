@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -23,7 +24,9 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Work Sans', serif !important;
   font-weight: bold !important;
 }
