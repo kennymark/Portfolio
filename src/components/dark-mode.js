@@ -15,9 +15,9 @@ function Darkmode() {
   }, [toggleIsDark])
 
   const toggleIsDark = () => {
-    if (window?.matchMedia('(prefers-color-scheme: dark)').matches) {
-      // dark mode
-    }
+    // if (window?.matchMedia('(prefers-color-scheme: dark)').matches) {
+    //   // dark mode
+    // }
     setIsDark(!isDark)
   }
 
