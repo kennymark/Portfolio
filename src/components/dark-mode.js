@@ -5,10 +5,10 @@ import Moon from '../images/moon.svg'
 
 function Darkmode() {
   const [isDark, setIsDark] = useState(false)
-  const theme = localStorage.getItem('color')
+  const theme = window.localStorage.getItem('color')
 
   useEffect(() => {
-    localStorage.setItem('theme', 'light')
+    window.localStorage.setItem('theme', 'light')
     toggleIsDark()
     console.log({ uni: document.styleSheets })
 
