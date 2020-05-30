@@ -1,0 +1,5 @@
+# Redirects from what the browser requests to what we serve
+/home              /
+/v1               https://kenny-v1.netlify.app/
+/v2               https://kenny-v2.netlify.app/
+/v3               https://kenny-v3s.netlify.app/
