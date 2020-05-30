@@ -12,9 +12,9 @@ function Darkmode() {
     toggleIsDark()
     console.log({ uni: document.styleSheets })
 
-  }, [toggleIsDark])
+  }, [])
 
-  const toggleIsDark = () => {
+  function toggleIsDark() {
     // if (window?.matchMedia('(prefers-color-scheme: dark)').matches) {
     //   // dark mode
     // }
