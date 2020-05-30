@@ -11,7 +11,7 @@
 ## Build
 `npm run build`
 
-Features
+## Features
 - Built with GatsbyJS and Netlify CMS
 - SEO friendly - Option to Add meta description
 - In-built contact form powered by Sendgrid and Netlify functions
