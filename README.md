@@ -1,5 +1,3 @@
-
-
 ## Personal Portofolio
 
 > This is my personal website built-with Gatsby and deployed with Netlify
@@ -26,6 +24,9 @@
 
 ## Screenshots
 
+Latest version
+![latest](screenshots/latest-v2.png)
+![latest](screenshots/latest-dark.png)
 ![home](screenshots/home.png)
 ![home](screenshots/home-light.png)
 ![contact](screenshots/contact.png)

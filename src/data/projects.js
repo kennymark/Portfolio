@@ -1,7 +1,41 @@
 
+
+exports.mainProjects = [
+  {
+    name: 'E-Commerce Store',
+    status: 'live',
+    description: 'A full stack application built with Node, Firebase, VueJs and Stripe for payments. ',
+    image: 'https://gitlab.com/kennymark/nuxt-mercado/-/raw/master/screenshots/products.png',
+    gif: '../images/gif/mercado.gif',
+    link: 'https://nuxt-mercado.netlify.app/',
+    source: 'https://gitlab.com/kennymark/nuxt-mercado',
+    color: 'red'
+  },
+  {
+    name: 'petitions dashboard',
+    status: 'live',
+    description: 'An SPA that extracts valuable insight into UK parliamentary petition data with just a simple url.',
+    image: 'https://raw.githubusercontent.com/kennymark/british-petitions-dashboard/master/screenshots/table-view.png',
+    gif: '../images/gif/petitions.gif',
+    link: 'https://petitions.now.sh/',
+    source: 'https://github.com/kennymark/british-petitions-dashboard',
+    color: 'green'
+  },
+
+  {
+    name: 'clever advisor',
+    status: 'in-progress',
+    description: 'An application I built for an interview process. A tool for investors to view their finance ',
+    image: 'https://gitlab.com/kennymark/clever-advisor/-/raw/master/screenshots/home.png',
+    gif: '../images/gif/clever-advisor.gif',
+    link: 'https://clever-advisor.netlify.com/',
+    source: 'https://gitlab.com/kennymark/clever-advisor',
+    color: 'gray'
+  },
+]
 exports.topProjects = [
   {
-    name: 'Fullstack e-commerce Store',
+    name: 'E-Commerce Store',
     status: 'live',
     description: 'A full stack application built with Node, Firebase, VueJs and Stripe for payments. ',
     image: 'https://gitlab.com/kennymark/nuxt-mercado/-/raw/master/screenshots/products.png',
@@ -40,9 +74,9 @@ exports.topProjects = [
     name: 'petitions dashboard',
     status: 'live',
     description: 'An SPA that extracts valuable insight into UK parliamentary petition data with just a simple url.',
-    image: 'https://raw.githubusercontent.com/kennymark/petitions-dashboard/master/petitions.png',
-    link: 'https://petitionsdashboard.netlify.com/',
-    source: 'https://github.com/kennymark/petitions-dashboard',
+    image: 'https://raw.githubusercontent.com/kennymark/british-petitions-dashboard/master/screenshots/table-view.png',
+    link: 'https://petitions.now.sh/',
+    source: 'https://github.com/kennymark/british-petitions-dashboard',
     color: '#ffedc5'
   },
   {
@@ -67,7 +101,7 @@ exports.topProjects = [
   {
     name: 'clever advisor',
     status: 'in-progress',
-    description: 'An application I built for an interview process. ',
+    description: 'An application I built for an interview process. A tool for investors to view their finance',
     image: 'https://gitlab.com/kennymark/clever-advisor/-/raw/master/screenshots/home.png',
     link: 'https://clever-advisor.netlify.com/',
     source: 'https://gitlab.com/kennymark/clever-advisor',
@@ -91,7 +125,7 @@ exports.extraProjects = [
   },
   {
     name: 'fse-rec',
-    description: 'The FSE-REC is an asp.net web app built by me and and 3 other friends as my second year work based learning project for the University. It includes functionality ranging from a SQl database, dynamic routing, login integration.',
+    description: 'The FSE-REC is an asp.net web app built by me and and 3 other friends as my second year work based learning project for the University. It includes functionality ranging from a SQL database, dynamic routing, login integration.',
     link: 'https://codepen.io/kennymark/full/GmeGoa'
   },
   {

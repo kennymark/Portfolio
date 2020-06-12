@@ -1,5 +1,3 @@
-const tailwindConfig = require("./tailwind.config.js");
-
 
 module.exports = {
   siteMetadata: {
@@ -8,7 +6,6 @@ module.exports = {
     author: `@mrkennymark`,
   },
   plugins: [
-    `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`,
@@ -16,9 +13,39 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `blogPosts`,
+        path: `${__dirname}/src/blogPosts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 900,
+              quality: 100,
+              linkImagesToOriginal: true,
+            },
+          },
+        ],
+
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -40,22 +67,11 @@ module.exports = {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
-          { family: `Rubik`, variants: [`400`, `500`,] },
-          { family: `Work Sans`, variants: [`700`], },
+          { family: `Work Sans`, variants: [`500`, `600`,] },
+          { family: `Playfair Display`, variants: [`700`], },
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [
-          require(`tailwindcss`)(tailwindConfig),
-          require(`autoprefixer`),
-          ...(process.env.NODE_ENV === `production`
-            ? [require(`cssnano`)]
-            : []),
-        ],
-      },
-    },
+
   ],
 }
