@@ -12,7 +12,7 @@ const MenuItems = ({ children, to }) => {
   const { colorMode } = useColorMode()
   return (
     <Link to={to} activeStyle={{ color: colorMode === 'light' ? 'black' : '#38a169', marginRight: 15 }}
-      style={{ color: 'gray.500', marginRight: 15, fontFamily: 'playfair display', marginTop: 10 }} >
+      style={{ color: 'gray.500', marginRight: 15, fontFamily: 'Playfair', marginTop: 10 }} >
       {children}
     </Link>
   )
