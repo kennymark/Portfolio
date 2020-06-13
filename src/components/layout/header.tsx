@@ -77,7 +77,7 @@ const Header = props => {
         </Flex>
 
 
-        <NLink as={Flex} href='https://github.com/kennymark' isExternal _focus={{ outline: 0 }} mt={[1, -3]} alignItems='center' color='gray.500'>
+        <NLink href='https://github.com/kennymark' isExternal _focus={{ outline: 0 }} mt={[1, -3]} alignItems='center' color='gray.500'>
           <Box as='img' alt="github-icon" src={Github} h={[5, 6]} color='red.700' />
           <Text ml={2} display={[show ? 'flex' : 'none']}>Visit my Github</Text>
         </NLink>
