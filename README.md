@@ -1,6 +1,6 @@
 ## Personal Portofolio
 
-> This umpteenths version of my personal website built-with Gatsby and deployed with Netlify
+> The umpteenth version of my personal website built-with Gatsby and deployed with Netlify and Netlify functions for handling contact
 
 
 ## Development
