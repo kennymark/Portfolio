@@ -4,7 +4,7 @@ import React from 'react'
 function Home() {
   const { colorMode } = useColorMode()
   return (
-    <Stack h={['70vh', null, '70vh', '90vh']} mx='auto' w='80%' justifyContent='center' flexDirection='column' >
+    <Stack h={['65vh', null, '70vh', '90vh']} mx='auto' w='80%' justifyContent='center' flexDirection='column' >
       <Flex alignSelf='center'>
         <Heading as='h1' fontSize={['4xl', '5xl', '6xl', '140px']} letterSpacing={2} lineHeight={1.1} fontFamily='Playfair' fontWeight='bold'>
           I design <Box as='span' color='green.500'>&</Box> build beautiful web
