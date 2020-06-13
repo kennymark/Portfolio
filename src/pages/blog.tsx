@@ -23,7 +23,7 @@ function Blog({ data: { allMdx: { edges: posts } } }) {
                 borderColor='green.900' minH={400}
                 maxW={['', '', 1000]} mx='auto'>
 
-                <Box as={Img} src={image} h={[250, 200, '100%']} w={['100%', null]} roundedLeft={['', '', 'lg']} bgAttachment='fixed' />
+                <Box as={Img} src={image} h={[250, 200, '100%']} maxH={400} w={['100%', null]} roundedLeft={['', '', 'lg']} bgAttachment='fixed' />
 
                 <Flex justify='space-around' direction='column' key={node.id} p={6}>
                   <PageHeader title={title} simple />
