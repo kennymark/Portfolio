@@ -66,6 +66,7 @@ const Header = props => {
         fontWeight='600'
         pos='relative'
         top={2}
+        mt={[2, 0]}
       >
         <Flex onClick={toggleColorMode} pos='relative' top={-5}>
           <Icon name={colorMode === 'dark' ? 'sun' : 'moon'}
@@ -77,7 +78,7 @@ const Header = props => {
         </Flex>
 
 
-        <NLink href='https://github.com/kennymark' isExternal _focus={{ outline: 0 }} mt={[1, -3]} alignItems='center' color='gray.500'>
+        <NLink href='https://github.com/kennymark' isExternal _focus={{ outline: 0 }} mt={[1, -3]} alignItems='center' color='gray.500' display='flex'>
           <Box as='img' alt="github-icon" src={Github} h={[5, 6]} color='red.700' />
           <Text ml={2} display={[show ? 'flex' : 'none']}>Visit my Github</Text>
         </NLink>
