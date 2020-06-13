@@ -14,8 +14,8 @@ var plugins = [{
       plugin: require('/Users/kennymark/Desktop/Projects/React-apps/portfolio/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"UA-68267074-2","head":true},
     },{
-      plugin: require('/Users/kennymark/Desktop/Projects/React-apps/portfolio/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
-      options: {"plugins":[],"fonts":[{"family":"Work Sans","variants":["500","600"]},{"family":"Playfair Display","variants":["700"]}]},
+      plugin: require('/Users/kennymark/Desktop/Projects/React-apps/portfolio/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
+      options: {"plugins":[],"fonts":["Work Sans:500,600","Playfair Display:700"],"display":"swap"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

@@ -64,13 +64,14 @@ module.exports = {
       options: { trackingId: "UA-68267074-2", head: true, },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          { family: `Work Sans`, variants: [`500`, `600`,] },
-          { family: `Playfair Display`, variants: [`700`], },
+          `Work Sans\:500,600`,
+          `Playfair Display\:700` // you can also specify font weights and styles
         ],
-      },
+        display: 'swap'
+      }
     },
 
   ],
