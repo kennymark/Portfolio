@@ -14,7 +14,7 @@ export default function Projects() {
   const { colorMode } = useColorMode()
 
   return (
-    <Layout largeContainer>
+    <Layout>
       <SEO title="Projects" />
 
       <PageHeader title='Portfolio Showcase' />
@@ -44,11 +44,8 @@ export default function Projects() {
                   borderRadius='inherit'
                   p={4}
                   justifyContent='center'
-                  className=" desc"
-                >
-
+                  className=" desc">
                   <Box position='relative' textAlign='center' mx='auto' mb={5} fontSize={20}>{project.description}</Box>
-
                 </Flex>
 
               </PseudoBox>
@@ -64,7 +61,7 @@ export default function Projects() {
         <PageHeader simple title='More...' />
         {extraProjects.map((project, idx) => (
 
-          <Box bg='gray.200' rounded='md' p={3} mt={4} key={idx} >
+          <Box bg={colorMode === 'dark' ? 'gray.800' : 'gray.200'} rounded='md' p={3} mt={4} key={idx} >
             <Flex justifyContent='space-between'>
 
               <Heading textTransform='capitalize' size='lg' mb={2} fontSize={20} color='black'>{project.name} </Heading>
