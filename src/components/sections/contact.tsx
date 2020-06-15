@@ -6,7 +6,7 @@ import { useForm, ErrorMessage } from 'react-hook-form';
 import PageHeader from '../ui/page-header';
 
 function Contact() {
-  const { register, handleSubmit, errors, } = useForm();
+  const { register, handleSubmit, errors, reset } = useForm();
 
   const toast = useToast()
   const { colorMode } = useColorMode()
@@ -44,6 +44,7 @@ function Contact() {
         status: 'success',
         ...commonToast
       })
+      setTimeout(() => reset(), 2000);
     } catch (error) {
       toast({
         title: 'Email sending failed',
