@@ -4,6 +4,7 @@ import { Box, Button, FormControl, FormLabel, Input, Stack, Textarea, useColorMo
 import React from 'react';
 import { useForm, ErrorMessage } from 'react-hook-form';
 import PageHeader from '../ui/page-header';
+import { flatMap } from 'lodash';
 
 function Contact() {
   const { register, handleSubmit, errors, reset } = useForm();
@@ -58,13 +59,13 @@ function Contact() {
 
 
 
-  function setValidation(name: string) {
+  function setValidation(name: string, isMessage: boolean = false) {
     return {
       minLength: {
         value: 4,
         message: `${name} should be 4 characters or greater`
       },
-      maxLength: 40,
+      maxLength: isMessage ? 2000 : 40,
       required: `${name} is required`
     }
   }
@@ -94,7 +95,7 @@ function Contact() {
 
           <FormControl>
             <FormLabel htmlFor="email" color='gray.600'>Message</FormLabel>
-            <Textarea type='textarea' name="message" ref={register(setValidation('Message'))} aria-describedby="message-box" {...props} h={300} />
+            <Textarea type='textarea' name="message" ref={register(setValidation('Message', true))} aria-describedby="message-box" {...props} h={300} />
             <ErrorMessage errors={errors} name='message' as={<Text color='red.600' />} />
           </FormControl>
 
