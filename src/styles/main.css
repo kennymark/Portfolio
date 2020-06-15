@@ -38,13 +38,9 @@ main {
   opacity: .9;
 }
 
-
-
 .dark-mode footer,
-input,
 textarea {
   border-top: 1px solid black;
-  color: lightgrey !important;
 }
 
 .proj {

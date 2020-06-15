@@ -1,5 +1,5 @@
 //@ts-nocheck
-import { Box, Heading, PseudoBox, Flex, Text, Link as NLink, Button, useColorMode } from '@chakra-ui/core';
+import { Box, Heading, PseudoBox, Flex, Text, Link as NLink, Button, useColorMode, Stack } from '@chakra-ui/core';
 import { Link } from "gatsby";
 import React from 'react';
 import { Img } from 'react-image';
@@ -32,8 +32,7 @@ export default function Projects() {
                 <Heading as='h2' fontSize={18} textTransform='capitalize' textAlign='center' mb={2} color='black'>{project.name} </Heading>
                 <Box as={Img} src={project.image} alt={project.name} rounded='md' shadow='lg' />
 
-                <Flex
-                  direction='column'
+                <Stack
                   bg={project.color}
                   w='inherit'
                   height='inherit'
@@ -46,7 +45,7 @@ export default function Projects() {
                   justifyContent='center'
                   className=" desc">
                   <Box position='relative' textAlign='center' mx='auto' mb={5} fontSize={20}>{project.description}</Box>
-                </Flex>
+                </Stack>
 
               </PseudoBox>
             </Link>

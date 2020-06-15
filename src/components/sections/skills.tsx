@@ -21,7 +21,7 @@ function Skills() {
 
       <SimpleGrid columns={[1, 1, 2, 4]} spacing={5} >
         {types.map((type, key) =>
-          <Box rounded='lg' pb={8} key={type} position='relative'
+          <Box rounded='lg' pb={8} key={type} position='relative' key={key}
             bg={skillTypes[type].color + '.100'} zIndex={206}>
 
             <Box as='img' src={images[key]} alt={type} pos='absolute' width='inherit' height='100%' opacity={.14} zIndex={205} />
@@ -30,16 +30,13 @@ function Skills() {
             </Heading>
 
             {skillTypes[type].skills.map(item => (
-              <Text py={2} textAlign='center' width='80%' rounded='lg' mb={2} mx='auto' color={'gray.700'} fontWeight='600'>{item}</Text>
+              <Text py={2} textAlign='center' width='80%' rounded='lg' mb={2} mx='auto' color={'gray.700'} fontWeight='600' key={item}>{item}</Text>
             ))}
 
           </Box>
         )}
 
       </SimpleGrid>
-
-
-
 
     </Box >
 
