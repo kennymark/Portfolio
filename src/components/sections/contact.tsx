@@ -1,7 +1,6 @@
 
 //@ts-nocheck
-import { Box, Button, FormControl, FormLabel, Heading, Input, Stack, Textarea, useToast, useColorMode } from '@chakra-ui/core';
-import { navigate } from "gatsby";
+import { Box, Button, FormControl, FormLabel, Input, Stack, Textarea, useColorMode, useToast } from '@chakra-ui/core';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import PageHeader from '../ui/page-header';
@@ -30,12 +29,10 @@ function Contact() {
 
       toast({
         title: 'Email sent',
-        description: 'Email has been sucessfully sent. Redirecting...',
+        description: 'Email has been sucessfully sent.',
         status: 'success',
         ...commonToast
       })
-
-      setTimeout(() => navigate('/'), 2000);
     } catch (error) {
       toast({
         title: 'Email sending failed',
