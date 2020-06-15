@@ -35,12 +35,11 @@ main {
 
 .dark-mode {
   background: #111216 !important;
-  opacity: .9;
 }
 
-.dark-mode footer,
-textarea {
+.dark-mode footer {
   border-top: 1px solid black;
+  color: lightgray;
 }
 
 .proj {

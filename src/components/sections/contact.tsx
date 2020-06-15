@@ -69,32 +69,32 @@ function Contact() {
     }
   }
   return (
-    <Box pb={40} >
+    <Box pb={40} id='contact-section'>
       <PageHeader simple title='Contact me' hasB />
       <form onSubmit={handleSubmit(sendMail)}>
         <Stack>
 
           <FormControl mb={5}>
             <FormLabel htmlFor="subject" color='gray.600'>Subject</FormLabel>
-            <Input type="text" name="subject" aria-describedby="subject-helper-text" {...inputProps} ref={register(setValidation('Subject'))} />
+            <Input id='subject' type="text" name="subject"  {...inputProps} ref={register(setValidation('Subject'))} />
             <ErrorMessage errors={errors} name='subject' as={<Text color='red.600' />} />
           </FormControl>
 
           <FormControl>
             <FormLabel htmlFor="name" color='gray.600'>Name</FormLabel>
-            <Input type="name" name="name" ref={register(setValidation('Name'))} aria-describedby="name-helper-text" {...inputProps} />
+            <Input id='name' type="name" name="name" ref={register(setValidation('Name'))} {...inputProps} />
             <ErrorMessage errors={errors} name='name' as={<Text color='red.600' />} />
           </FormControl>
 
           <FormControl>
             <FormLabel htmlFor="email" color='gray.600'>Email address</FormLabel>
-            <Input type="email" name="email" ref={register(setValidation('Email'))} aria-describedby="email-helper-text" {...inputProps} />
+            <Input id='email' type="email" name="email" ref={register(setValidation('Email'))}  {...inputProps} />
             <ErrorMessage errors={errors} name='email' as={<Text color='red.600' />} />
           </FormControl>
 
           <FormControl>
-            <FormLabel htmlFor="email" color='gray.600'>Message</FormLabel>
-            <Textarea type='textarea' name="message" ref={register(setValidation('Message', true))} aria-describedby="message-box" {...inputProps} h={300} />
+            <FormLabel htmlFor="message" color='gray.600'>Message</FormLabel>
+            <Textarea id='message' type='textarea' name="message" ref={register(setValidation('Message', true))} {...inputProps} h={300} resize='none' />
             <ErrorMessage errors={errors} name='message' as={<Text color='red.600' />} />
           </FormControl>
 
