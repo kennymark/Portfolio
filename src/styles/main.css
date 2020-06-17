@@ -10,7 +10,6 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
   overflow-x: hidden;
-  transition: background .3s ease-in-out;
 }
 
 h1,
