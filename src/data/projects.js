@@ -110,14 +110,14 @@ exports.topProjects = [
 ]
 
 exports.extraProjects = [
-  // {
-  //   name: 'car info extractor',
-  //   status: 'live',
-  //   description: 'Get valuable info from a car before purchase (uk only).',
-  //   image: 'https://raw.githubusercontent.com/kennymark/uk-car-search/master/img.png',
-  //   link: 'https://github.com/kennymark/uk-car-search',
-  //   github: 'https://github.com/kennymark/uk-car-search'
-  // },
+  {
+    name: 'car info extractor',
+    status: 'live',
+    description: 'Get valuable info from a car before purchase (uk only).',
+    image: 'https://raw.githubusercontent.com/kennymark/uk-car-search/master/img.png',
+    link: 'https://car-finder.netlify.app/',
+    github: 'https://github.com/kennymark/uk-car-search'
+  },
   {
     name: 'oz studios',
     description: 'Oz Studios is a fictional web design agency website built to showcase my skills as a front-end developer or web designer.',

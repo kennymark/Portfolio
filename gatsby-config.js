@@ -63,16 +63,5 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: { trackingId: "UA-68267074-2", head: true, },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Work Sans\:500,600`,
-          `Playfair Display\:700` // you can also specify font weights and styles
-        ],
-        display: 'swap'
-      }
-    },
-
   ],
 }

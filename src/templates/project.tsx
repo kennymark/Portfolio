@@ -26,8 +26,8 @@ export default function Project(props) {
       <Text textAlign='center' color='gray.500' my={5} fontSize={20}>{upperFirst(project.description)}</Text>
 
 
-      <Flex mx='auto' rounded={[null, 'lg']} shadow='lg' p={12} backgroundColor={project.color} maxW={600}>
-        <Box as={Img} src={project.image} mx='auto' className='mx-auto self-center rounded-lg shadow' />
+      <Flex mx='auto' rounded={[null, 'lg']} shadow='lg' p={12} backgroundColor={project.color} maxW={600} maxH={600}>
+        <Box as={Img} src={project.image} mx='auto' shadow='md' />
       </Flex>
 
       <Box mx='auto' my={30} justifySelf='center' alignSelf='center' w='fit-content'>

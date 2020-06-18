@@ -8,7 +8,7 @@ export const CodeBlock = ({ children, className }) => {
   return (
     <Highlight {...defaultProps} code={children} language={language} theme={theme}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <Box as='pre' rounded='lg' mb={5} fontFamily='Work Sans' p={25} fontSize={18} pb={1} className={className} style={{ ...style, }}>
+        <Box as='pre' rounded='lg' mb={5} fontFamily='Source Code Pro' p={25} fontSize={18} pb={1} className={className} style={{ ...style, }}>
           {tokens.map((line, i) => (
             <div key={i} {...getLineProps({ line, key: i })}>
               {line.map((token, key) => (
